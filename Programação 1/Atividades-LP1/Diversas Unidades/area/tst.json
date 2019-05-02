@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "6\n",
+      "output": "A: 28.27433\nP: 18.84956\n"
+    }
+  ]
+}

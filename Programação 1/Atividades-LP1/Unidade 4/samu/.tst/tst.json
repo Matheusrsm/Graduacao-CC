@@ -1,0 +1,18 @@
+{
+  "files": {
+    "samu.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atendimentos no SAMU\n\nlista = []\nsoma = 0\nfor mes in range(12):\n    valor_mes = int(input())\n    soma += valor_mes\n    lista.append(valor_mes)\nprint 'M\u00e9dia mensal de atendimentos: %.2f' % (soma / 12.0)\nprint '----'\nfor x in range(len(lista)):\n    if lista[x] > (soma / 12):\n        print 'M\u00eas %d: %d' % ((x + 1), lista[x])\n\n",
+      "name": "samu.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f37d2e13065d9d17d282bc43cf632def",
+  "iid": 6076462603960320,
+  "activity_revision": "1.1.1"
+}

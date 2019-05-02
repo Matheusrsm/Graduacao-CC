@@ -1,0 +1,14 @@
+{
+  "files": {
+    "arvore.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atividade: \u00c1rvore de Natal\n\naltura = int(input())\nespacos = altura\nfor parte in range(1, altura + 1):\n    espacos -= 1\n    print '%s%s' % (espacos * ' ', 'o' * (parte + parte - 1))\nprint '%so' % (' ' * (altura - 1))\n",
+      "name": "arvore.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7cf49ebfc8f95db3f87e14792abf5af6",
+  "iid": 5786913088733184,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2.2\n3.5\n5\n2\n1\n10\n-\n3.0\n",
+      "output": "media = 3.6\nnum = 3\n"
+    }
+  ]
+}

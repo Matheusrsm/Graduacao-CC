@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: No Limite\n\nlista = []\n\nwhile True:\n    indice = raw_input()\n    if indice == '-': \n        break\n    lista.append(indice)\nlimite = float(raw_input())\nsoma = 0\ni = 0 \nwhile i < len(lista):\n    soma += float(lista[i])\n    media = soma / (i + 1)\n    i += 1\n    if media > limite:\n        print 'media = %.1f\\nnum = %d' % (media, i)\n        break\nelse:\n    print 'limite n\u00e3o alcan\u00e7ado'\n",
+      "name": "limite.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d65b3e62181f090648dd5b88687c147e",
+  "iid": 5578564090986496,
+  "activity_revision": "1.0.3"
+}

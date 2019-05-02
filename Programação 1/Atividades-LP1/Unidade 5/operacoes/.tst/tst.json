@@ -1,0 +1,18 @@
+{
+  "files": {
+    "operacoes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Verifica Opera\u00e7\u00f5es Extrato\n\nlimite = int(input())\nsaldo = float(raw_input())\ncont = 0\nwhile True:\n    op = raw_input().split()\n    if op[0] == 'saque':\n        cont += 1\n        saldo -= float(op[1])\n        if saldo < 0 or cont > limite:\n            print 'Opera\u00e7\u00e3o inv\u00e1lida: saque %.2f.' % float(op[1])\n            saldo += float(op[1])\n            print 'Seu saldo \u00e9 R$ %.2f.' % saldo\n            break\n    else:\n        if float(op[1]) > 1000:\n            print 'Opera\u00e7\u00e3o inv\u00e1lida: dep\u00f3sito %.2f.' % float(op[1])\n            print 'Seu saldo \u00e9 R$ %.2f.' % saldo\n            break\n        else:\n            saldo += float(op[1])\n",
+      "name": "operacoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 245.18,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c8a6508f3b7290779dfba600157da69f",
+  "iid": 5736154225704960,
+  "activity_revision": "1.0.3"
+}

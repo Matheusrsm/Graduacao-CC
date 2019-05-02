@@ -1,0 +1,18 @@
+{
+  "files": {
+    "impare.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atividade: S\u00e9rie (\u00edmpare 1)\n\nnumeros = range(1, 103, 2)\nfor n in numeros:\n    if n % 3 == 0 or n % 5 == 0:\n        n = '*'\n    print n\n",
+      "name": "impare.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 51.89,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "74ebb8c2aeabe987701903448adabf8c",
+  "iid": 5827418522648576,
+  "activity_revision": "1.1.1"
+}

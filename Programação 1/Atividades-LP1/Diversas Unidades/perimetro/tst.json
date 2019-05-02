@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "200\n300\n",
+      "output": "O perímetro resultante (em cm) é 100.00.\n"
+    }
+  ]
+}

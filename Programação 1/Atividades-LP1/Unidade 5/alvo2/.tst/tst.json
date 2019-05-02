@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 23,\n      \"vhalstead\": 176.42,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "alvo2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Tiro ao Alvo 2\n\nimport math\nimport sys\ncontador = 0\ndistancias = []\n\n\ndef calc_dist(x, y):\n    quadrado = x ** 2 + y ** 2\n    raiz = math.sqrt(quadrado)\n    return raiz\n\n\nwhile True:\n    x, y = float(raw_input()), float(raw_input())\n    if calc_dist(x, y) <= 200:\n        contador += 1\n    else: \n        break\n    distancias.append(calc_dist(x, y))\nsoma = 0\nmaior = 0\nmenor = sys.maxint\nfor d in distancias:\n    soma += d\n    if d > maior:\n        maior = d\nfor d in distancias:\n    if d < menor:\n        menor = d\n        print '%.2f cm (melhor tiro)' % d\n    else:\n        print '%.2f cm' % d\nprint '--\\nnum tiros: %d' % contador\nprint 'melhor tiro: %.2f cm' % menor\nprint 'distancia media: %.2f cm' % (soma / len(distancias))\n",
+      "name": "alvo2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2f006981c9f4e5d2cf3d3d2788a550db",
+  "iid": 6744201840558080,
+  "activity_revision": "1.0.2"
+}

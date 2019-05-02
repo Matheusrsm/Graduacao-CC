@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\nteste\nexemplo\npalavra\ncontador\nalfabetica\npalavra\n",
+      "type": "io",
+      "name": "test_name",
+      "output": "---\n3 antes\n1 depois\n"
+    },
+    {
+      "category": "public",
+      "input": "5\nteste\nexemplo\npalavra\ncontador\nalfabetica\nteste\n",
+      "type": "io",
+      "name": "test_name",
+      "output": "---\n4 antes\n0 depois\n"
+    },
+    {
+      "category": "public",
+      "input": "5\nteste\nexemplo\npalavra\ncontador\nalfabetica\nbuscar\n",
+      "type": "io",
+      "name": "test_name",
+      "output": "---\n1 antes\n4 depois\n"
+    }
+  ]
+}

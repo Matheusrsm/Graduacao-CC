@@ -1,0 +1,16 @@
+{
+  "files": {
+    "aluno.py": {
+      "category": "public",
+      "data": "# coding: utf-8\n# custo inss\n\n\n#Definindo vari\u00e1veis:\n\na = float(raw_input())\t\nif a<=360:\n\tif a>=1 and a<=89:\n\t\tprint 'Quadrante 1' \n\telif a==0 or a==90:\n\t\tprint 'Sobre eixos'\n\telif a>90 and a<180:\n\t\tprint 'Quadrante 2'\n\telif a == 180:\n\t\tprint 'Sobre eixos'\n\telif a>180 and a<270:\n\t\tprint 'Quadrante 3'\n\telif a == 270:\n\t\tprint 'Sobre eixos'\n\telif a>270 and a <360:\n\t\tprint 'Quadrante 4'\n\telif a == 360:\n\t\tprint 'Sobre eixos'\nif a>360:\n\tnum2=a%360\n\t\n\tif num2>=1 and num2<=89:\n\t\tprint 'Quadrante 1'\n\telif num2==0 or num2==90:\n\t\tprint 'Sobre eixos'\n\telif num2> 90 and num2 <180:\n\t\tprint 'Quadrante 2'\n\telif num2==180:\n\t\tprint 'Sobre eixos'\n\telif num2>180 and num2<270:\n\t\tprint 'Quadrante 3'\n\telif num2==270:\n\t\tprint 'Sobre eixos'\n\telif num2>270 and num2<360:\n\t\tprint 'Quadrante 4'\n\telif num2==360:\n\t\tprint 'Sobre eixos'\t\n\n"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "iid": 5639704326176768,
+  "kind": "assignment",
+  "activity_revision": "1.0.20",
+  "name": null
+}

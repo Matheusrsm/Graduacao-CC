@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "230\n4.25\n",
+      "output": "Valor da passagem: R$ 1028.50\n\nPagamento:\n1. À vista. R$ 771.38\n2. Em 6 parcelas. Total: R$ 977.07\n   6 x R$ 162.85\n3. Em 10 parcelas. Total: R$ 1028.50\n   10 x R$ 102.85\n"
+    }
+  ]
+}

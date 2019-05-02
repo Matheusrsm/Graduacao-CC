@@ -1,0 +1,23 @@
+{
+  "files": {
+    "unnamed.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Unnamed\n\nquantidade = 0\nconjunto = 0\nmaior_quantidade = 0\nmaior_conjunto = 0\n\nwhile True:\n    numero = raw_input()\n    if numero == 'fim': break\n    if int(numero) < 0:\n        conjunto += 1\n        if quantidade > maior_quantidade:\n            maior_quantidade = quantidade\n            maior_conjunto = conjunto\n        quantidade = 0\n    else:\n        quantidade += 1\nif conjunto > 0:\n    print 'Conjunto %d - %d elemento(s)' % (maior_conjunto, maior_quantidade)\n    \n        \n",
+      "name": "unnamed.py"
+    },
+    "unnamed2.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Unnamed\n\nlista = []\ncontador = 0\n\nwhile True:\n    numero = raw_input()\n    if numero == 'fim': break\n    if int(numero) < 0:\n        lista.append(contador)\n        contador = 0\n    else:\n        contador += 1\nmaior = 0\nfor i in range(len(lista)):\n    if lista[i] > lista[maior]:\n        maior = i\nif len(lista) > 0:\n    print 'Conjunto %d - %d elemento(s)' % ((maior + 1), lista[maior])\n",
+      "name": "unnamed2.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "70b545083fbe61b11b7d5c938479195d",
+  "iid": 6411934245060608,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "35.0\n40.0\n85\n45\n-20\n15\n215\n181\n",
+      "output": "53.15 cm (melhor tiro)\n96.18 cm\n25.00 cm (melhor tiro)\n--\nnum tiros: 3\nmelhor tiro: 25.00 cm\ndistancia media: 58.11 cm\n"
+    }
+  ]
+}

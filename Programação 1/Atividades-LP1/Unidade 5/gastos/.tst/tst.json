@@ -1,0 +1,18 @@
+{
+  "files": {
+    "gastos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Limite de Gastos\n\nentrada = float(raw_input())\nlista = []\n\n\nwhile True:\n    linha = raw_input()\n    quebrado = linha.split()\n    soma = 0\n    if linha == 'fim': break\n    else:\n        for i in range(len(quebrado)):\n            soma += float(quebrado[i])\n        string = ''\n        if (soma / len(quebrado)) > entrada:\n            print linha\n        if (soma / len(quebrado)) <= (entrada / 2): break\n",
+      "name": "gastos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6082b20ba0d0a212d4763bd484db2d02",
+  "iid": 5884298385162240,
+  "activity_revision": "1.0.2"
+}

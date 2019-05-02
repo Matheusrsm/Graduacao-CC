@@ -1,0 +1,18 @@
+{
+  "files": {
+    "status.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matricula: 117110412\n# Atividade: Status de uma Disciplina\n\nnota1 = float(input())\nnota2 = float(input())\nnota3 = float(input())\nfaltas = int(input())\n\nmedia = (nota1 + nota2 + nota3) / 3\npresenca = (3000 - 100 * faltas) / 30\n\nif presenca >= 75:\n    if media >= 7:\n        print 'aprovado por media'\n    if media < 4:\n        print 'reprovado por nota'\n    if 4 <= media < 7:\n        print 'prova final'\nelse:\n     print 'reprovado por faltas'\n",
+      "name": "status.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 13,\n      \"vhalstead\": 81.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "49e94661c3d88ba2d0dbb9a622e7b9f9",
+  "iid": 5982923853398016,
+  "activity_revision": "1.1.1"
+}

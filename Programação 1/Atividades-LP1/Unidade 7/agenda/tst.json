@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "inserir\n3\njuca\n21011515\nabel\n21023333\ncarlos\n21108990\nbuscar\npedro\nbuscar\nabel\ninserir\n1\ncarlos\n21210087\nimprimir\nfinalizar\n",
+      "output": "Nome inexistente\n----------\nNome: abel\nFone: 21023333\n----------\nNome: abel\nFone: 21023333\n----------\nNome: carlos\nFone: 21108990\n----------\nNome: carlos\nFone: 21210087\n----------\nNome: juca\nFone: 21011515\n----------\n"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "ordena.py": {
+      "category": "answer",
+      "data": "def ordena_tipos(lista):\n    numeros = []\n    alphas = []\n    alphanumericos = []\n    for i in range(len(lista)):\n        if lista[i].isdigit():\n            numeros.append(lista[i])\n        elif lista[i].isalpha():\n            alphas.append(lista[i])\n        else:\n            alphanumericos.append(lista[i])\n    return numeros + alphas + alphanumericos\n",
+      "name": "ordena.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nordena_tipos = getattr(undertest, 'ordena_tipos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert ordena_tipos(['1a', '2', 'e', '4', '4.4', 'e6', '8']) == ['2', '4', '8', 'e', '1a', '4.4', 'e6']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1c709a4cdd77fc6eeb044aa841da3ae9",
+  "iid": 5221875579879424,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva\n# Matr\u00edcula: 117110412\n# Atividade: Agenda Telef\u00f4nica\n\ndef bubblesort(agenda):\n\tfor N in range(len(agenda)):\n\t\tfor i in range(N - 1, -1, -1):\n\t\t\tif agenda[i][0] > agenda[i + 1][0]:\n\t\t\t\tagenda[i], agenda[i + 1] = agenda[i + 1], agenda[i]\n\treturn agenda\n\t\nagenda = []\nnomes = []\n\t\nwhile True:\n\toperacao = raw_input()\n\tif operacao == 'finalizar': break\n\tif operacao == 'inserir':\n\t\tquantidade = int(input())\n\t\tfor i in range(quantidade):\n\t\t\tnome, numero = raw_input(), raw_input()\n\t\t\tagenda.append((nome, numero))\n\t\t\tnomes.append(nome)\n\telif operacao == 'buscar':\n\t\tnome = raw_input()\n\t\tfor j in range(len(agenda)):\n\t\t\tif nome == agenda[j][0]:\n\t\t\t\tprint 'Nome: %s\\nFone: %s\\n----------' % (agenda[j][0],agenda[j][1])\n\t\tif nome not in nomes:\n\t\t\tprint 'Nome inexistente\\n----------'\n\telif operacao == 'imprimir':\n\t\tbubblesort(agenda)\n\t\tfor j in range(len(agenda)):\n\t\t\tprint 'Nome: %s\\nFone: %s\\n----------' % (agenda[j][0],agenda[j][1])\n",
+      "name": "agenda.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2314ab4652abbe1af6d368849ad064b1",
+  "iid": 6438467076620288,
+  "activity_revision": "1.0.0"
+}

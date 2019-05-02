@@ -1,0 +1,14 @@
+{
+  "files": {
+    "alfabetica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atividade: Ordem Alfab\u00e9tica\n\nquantidade = int(input())\nlista = []\nantes = 0\ndepois = 0\n\nfor n in range(quantidade):\n    palavra = raw_input()\n    lista.append(palavra)\nprint '---'\nreferencia = raw_input()\nfor i in range(len(lista)):\n    if referencia > lista[i]:\n        antes += 1\n    if referencia < lista[i]:\n        depois += 1\nprint '%d antes\\n%d depois' % (antes, depois)\n",
+      "name": "alfabetica.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "020b475b5aa981eb7ca9d85efcc7ea26",
+  "iid": 6444470836920320,
+  "activity_revision": "1.0.0"
+}

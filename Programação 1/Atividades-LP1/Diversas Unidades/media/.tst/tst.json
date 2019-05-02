@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mediafinal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# M\u00e9dia Final\n# Matheus Silva / UFCG, Programa\u00e7\u00e3o 1\n\nmediaparcial = float(raw_input(\"\"))\nprovafinal = float(raw_input(\"\"))\n\nmediafinal = 0.6*mediaparcial + 0.4*provafinal\n\nprint \"M\u00e9dia final:\", mediafinal\n",
+      "name": "mediafinal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0eac6a718a66612ed014fde049c6d1f5",
+  "iid": 6654908967157760,
+  "activity_revision": "1.0.1"
+}

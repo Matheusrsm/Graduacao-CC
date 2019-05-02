@@ -1,0 +1,14 @@
+{
+  "files": {
+    "passagem.py": {
+      "category": "answer",
+      "data": "# coding: utf-8 \n# M\u00e9dia Final\n# Matheus Silva / UFCG, Programa\u00e7\u00e3o 1\n\ndistancia = float(raw_input())\naliquota = float(raw_input())\n\nvalor = 51.00 + distancia*aliquota\n\npag1 = 0.75*valor\npag2 = 0.95*valor\n\nparcela1 = pag2/6\nparcela2 = valor/10\n\nprint \"Valor da passagem: R$ %.2f\" % valor\nprint \"\"\nprint \"Pagamento:\"\nprint \"1. \u00c0 vista. R$ %.2f\" % pag1\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % pag2\nprint \"   6 x R$ %.2f\" % parcela1\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % valor\nprint \"   10 x R$ %.2f\" % parcela2\n",
+      "name": "passagem.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8d2221c26e7717453d9c6ddade9ae032",
+  "iid": 5242855253606400,
+  "activity_revision": "1.1.0"
+}

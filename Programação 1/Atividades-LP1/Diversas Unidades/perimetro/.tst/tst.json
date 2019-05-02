@@ -1,0 +1,14 @@
+{
+  "files": {
+    "perimetro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# M\u00e9dia Final\n# Matheus Silva / UFCG, Programa\u00e7\u00e3o 1\n\nbase = int(raw_input())\naltura = int(raw_input())\n\nperimetro = 2*(base + altura)/10\n\nprint 'O per\u00edmetro resultante (em cm) \u00e9 %.2f.' % perimetro\n\n",
+      "name": "perimetro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1f50ba54c798599f64eaf07d2f96d5d0",
+  "iid": 5194541804027904,
+  "activity_revision": "1.0.1"
+}

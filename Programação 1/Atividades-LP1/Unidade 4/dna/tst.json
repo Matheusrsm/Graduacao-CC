@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "ATCGAAGT\nATGCTTAT\n",
+      "output": "nao\n"
+    },
+    {
+      "category": "public",
+      "input": "ATCGAAGT\nAGCTAAGT\n",
+      "output": "sim\n"
+    }
+  ]
+}

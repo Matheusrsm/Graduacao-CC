@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_digitos_verificacao = getattr(undertest, 'calcula_digitos_verificacao', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_digitos_verificacao('153245875') == '40'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "cpf.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atividade: D\u00edgitos de Verifica\u00e7\u00e3o do CPF\n\ndef calcula_digitos_verificacao(digitos):\n\tmultiplicador = 2\n\tsoma = 0\n\tfor i in range((len(digitos) - 1), -1, -1):\n\t\tx = int(digitos[i])\n\t\tx *= multiplicador\n\t\tsoma += x\n\t\tmultiplicador += 1\n\tsoma *= 10\n\tdigito1 = soma % 11\n\tif digito1 == 10:\n\t\tdigito1 = 0\n\tsoma = digito1 * 2\n\tmultiplicador = 3\n\tfor i in range((len(digitos) - 1), -1, -1):\n\t\tx = int(digitos[i])\n\t\tx *= multiplicador\n\t\tsoma += x\n\t\tmultiplicador += 1\n\tsoma *= 10\n\tdigito2 = soma % 11\n\tif digito2 == 10:\n\t\tdigito2 = 0\n\treturn str(digito1) + str(digito2)\n",
+      "name": "cpf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6c725842942f68bb862499026948c5a5",
+  "iid": 6372268343033856,
+  "activity_revision": "1.0.1"
+}

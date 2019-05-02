@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "6452.321\n24/10/1732\n5\n",
+      "output": "Data: 24/10/1732\nO valor total da compra foi de R$ 6452.32. A média do preço dos produtos é de 1290.5.\n"
+    }
+  ]
+}

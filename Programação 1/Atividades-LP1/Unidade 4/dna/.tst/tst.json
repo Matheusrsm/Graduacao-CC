@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dna.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Matheus Silva Medeiros\n# Matr\u00edcula: 117110412\n# Atividade: DNA\n\nseq1 = raw_input()\nseq2 = raw_input()\niguais = 0\n\nfor i in range(len(seq1)):\n    if seq1[i] == seq2[i]:\n        iguais += 1\nif iguais > (len(seq1) / 2):\n    print 'sim'\nelse:\n    print 'nao'\n        \n\n",
+      "name": "dna.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 1,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a32bfd311e5ca0b678d9dcbfebd9c8b5",
+  "iid": 5872859545075712,
+  "activity_revision": "1.0.1"
+}

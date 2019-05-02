@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n10.10\nsaque 5.00\ndepósito 10.00\nsaque 10.10\ndepósito 50.00\ndepósito 120.00\nsaque 10.00\nsaque 10.00\nsaque 15.00\nsaque 20.00\n",
+      "output": "Operação inválida: saque 20.00.\nSeu saldo é R$ 140.00.\n"
+    }
+  ]
+}
