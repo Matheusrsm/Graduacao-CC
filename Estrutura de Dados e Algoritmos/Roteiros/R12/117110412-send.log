@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-28T14:04:41.580-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.25.101</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-29T16:23:50.719-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.0.105</message>
+</record>

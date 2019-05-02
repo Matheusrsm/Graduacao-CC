@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-21T14:20:20.741-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.0.105</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-23T11:56:55.140-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.0.111</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-23T12:16:42.476-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.0.111</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-23T12:28:01.183-0300</date>
+  <logger>MATHEUS SILVA MEDEIROS</logger>
+  <level>FINE</level>
+  <message>File 117110412-MATHEUS SILVA MEDEIROS.zip was received. It was sent by MATHEUS SILVA MEDEIROS from IP 192.168.0.111</message>
+</record>
