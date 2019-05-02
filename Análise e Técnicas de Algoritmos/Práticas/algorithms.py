@@ -64,8 +64,6 @@ def minimoMoedas(moedas, valorTroco):
 
 ########## PRÁTICA 4 ##########
 
-# Retorna o valor maximo que cabe na mochila com capacidade peso_maximo
-
 def mochila_binaria(peso_maximo, pesos, valores, n):
     cabeAlgumItem = False
     for item in pesos:
