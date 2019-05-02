@@ -1,0 +1,1340 @@
+Lines: 001339
+User Defined	Macro	RRECT	
+User Defined	Macro	Counter	
+User Defined	Macro	Timer	
+User Defined	Macro	ResistorWire	
+User Defined	Macro	Macro 2	
+User Defined	Macro	Macro	
+User Defined	Macro	Lock	
+User Defined	Macro	Delay	
+User Defined	Macro	DB-9 Macro	
+Data Converters	D/A	DAC8	DAC8	*8-Bit generic D/A converter - type:digital pkg:DIP14 [DVCC=14;DGND=13;] (1,2,3,4,5,6,7,9,10,11)
+Data Converters	A/D	ADC8	ADC8	*8-Bit generic A/D converter - type:digital pkg:DIP16 [DVCC=16;DGND=8;] (1,2,3,4,5,6,7,9,10,11,12,13,14,15)
+Data Converters	A/D	ADC0800	ADC0800	*National 8-bit A/D converter - pkg:DIP18 (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+SPICE Controls	Variable Access	Plot Var	
+SPICE Controls	Initial Condition	.IC	
+SPICE Controls	Node Set	.NODESET	
+Power Supplies	Digital	Ground	
+Power Supplies	Digital	Battery	
+Power Supplies	Digital	V Source	
+Power Supplies	Digital	+V	
+Power Supplies	Linear	I Source	
+Power Supplies	NonLinear	NLV Source	
+Power Supplies	NonLinear	NLI Source	
+Power Supplies	Controlled	V->V Source	
+Power Supplies	Controlled	V->I Source	
+Power Supplies	Controlled	I->V Source	
+Power Supplies	Controlled	I->I Source	
+Power Supplies	Controlled	F->V Source	FTOV	*Generic frequency to voltage converter
+Sources	Controlled	VCO	SINEVCO	*Voltage controlled sine wave oscillator - alias:ASINEVCO
+Sources	Controlled	VCO	TRIVCO	*Voltage controlled triangle wave oscillator - alias:ATRIVCO
+Sources	Controlled	VCO	SQRVCO	*Voltage controlled square wave oscillator - alias:ASQRVCO
+Analog	SPICE Controls	Analysis Probe	
+Analog	Power	Logic Switch	
+Analog	Instruments	Signal Gen	
+Analog	Instruments	Multimeter	
+Analog	Instruments	Data Seq	DIGSRC	*Data sequencer - type:source
+Digital	Instruments	Pulser	
+Instruments	Digital	SCOPE	
+Motors	DC	Stepper	
+Motors	DC	DC Motor	
+Optical devices	Sensors	Photo Resist	
+Optical devices	Sensors	Photo NPN	
+Optical devices	Sensors	Photo Diode	
+Optical devices	Coupler	Opto Isolator	OPTOISO	*NPN Optoisolator pkg:DIP6 1,2,5,4
+Optical devices	Coupler	Opto Isolator	OP4N25	*NPN Optoisolator pkg:DIP6 1,2,5,4
+Displays	Incandescent	Lamp	
+Displays	Diode	LED	LED0	p Typ INFRARED GaAs LED: Vf=1.2V Vr=5V If=40mA trr=3uS
+Displays	Diode	LED	LED1	p Typ RED GaAs LED: Vf=1.7V Vr=4V If=40mA trr=3uS
+Displays	Diode	LED	LED2	p Typ RED,GREEN,YELLOW,AMBER GaAs LED: Vf=2.1V Vr=4V If=40mA trr=3uS
+Displays	Diode	LED	LED3	p Typ BLUE SiC LED: Vf=3.4V Vr=5V If=40mA trr=3uS
+Displays	7-Segment LED	CA 7-Seg	REDCA	*RED common-anode 7-seg display
+Displays	7-Segment LED	CA 7-Seg	GREENCA	*GREEN common-anode 7-seg display
+Displays	7-Segment LED	CA 7-Seg	YELLOWCA	*YELLOW common-anode 7-seg display
+Displays	7-Segment LED	CA 7-Seg	AMBERCA	*AMBER common-anode 7-seg display
+Displays	7-Segment LED	CA 7-Seg	BLUECA	*BLUE common-anode 7-seg display
+Displays	7-Segment LED	CC 7-Seg	REDCC	*RED xx mon-anode 7-seg display
+Displays	7-Segment LED	CC 7-Seg	GREENCC	*GREEN common-anode 7-seg display
+Displays	7-Segment LED	CC 7-Seg	YELLOWCC	*YELLOW common-anode 7-seg display
+Displays	7-Segment LED	CC 7-Seg	AMBERCC	*AMBER common-anode 7-seg display
+Displays	7-Segment LED	CC 7-Seg	BLUECC	*BLUE common-anode 7-seg display
+Displays	Digital	Logic Display	
+Displays	Digital	Hex Display	
+Displays	Digital	Ascii Display	
+Transducers	Sound Device	Piezo Buzzer	
+Transducers	Sound Device	Speaker	
+Switches	Digital	Hex Key	
+Switches	Digital	Ascii Key	
+Switches	Toggle	SPST Switch	
+Switches	Toggle	SPDT Switch	
+Switches	Push Button	SPDT PB	
+Switches	Push Button	NO PushButton	
+Switches	Push Button	NC PushButton	
+Switches	Matrix	4x4 Switch	
+Switches	Controlled	I->Switch	CSW	*Default current-controlled switch
+Switches	Controlled	V->Switch	SW	*Default voltage-controlled switch
+Switches	Controlled	V->Switch	SW05	*Threshold voltage= 0.5V
+Switches	Controlled	V->Switch	STTL	*Threshold voltage= 2.5V
+Switches	Controlled	V->Switch	TTL	*TTL switch (vih=2.0v, vil=0.8v)
+Switches	Controlled	V->Switch	XTTL	*Threshold voltage= 4V
+Switches	Controlled	V->Switch	SWM10	*Threshold voltage= -10mV
+Switches	Controlled	V->Switch	SWP10	*Threshold voltage= 10mV
+Switches	Controlled	V->Switch	TRIAC	*Threshold voltage= 1V
+Switches	Multiplexers	ADG409	ADG409	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG409	ADG409B	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG409	ADG409T	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG409	ADG509F	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG409	ADG509FB	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG409	ADG509FT	x AD Dual 4-Ch Analog Multiplexer pkg:DIP16 4,5,6,7,13,12,11,10,16,1,2,8,9,14,15,16
+Switches	Multiplexers	ADG408	ADG408	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG408B	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG408T	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG508F	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG508FB	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG508FT	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG528F	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG528FB	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG408	ADG528FT	x AD 8-CH analog Multiplexer pkg:DIP16 4,5,6,7,12,11,10,9,16,16,1,2,8,14,15,3
+Switches	Multiplexers	ADG407	ADG407	x AD Dual 8-CH Analog Multiplexer pkg:DIP28 19,20,21,22,23,24,25,26,11,10,9,8,7,5,5,4,15,16,17,18,28,2,1,12,27
+Switches	Multiplexers	ADG407	ADG407B	x AD Dual 8-CH Analog Multiplexer pkg:DIP28 19,20,21,22,23,24,25,26,11,10,9,8,7,5,5,4,15,16,17,18,28,2,1,12,27
+Switches	Multiplexers	ADG406	ADG406	x AD 16-channel High Performance Analog Multiplexer pkg:DIP28 19,20,21,22,23,24,25,26,11,10,9,8,7,6,5,4,14,15,16,17,18,28,1,12,27
+Switches	Multiplexers	ADG406	ADG406B	x AD 16-channel High Performance Analog Multiplexer pkg:DIP28 19,20,21,22,23,24,25,26,11,10,9,8,7,6,5,4,14,15,16,17,18,28,1,12,27
+Switches	Soild State	ADG44x	ADG441	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG441B	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG441BS	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG441S	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG441T	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG441TS	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG442	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG442B	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG442BS	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG442S	x AD Quad SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG511_3	x AD Quad SPST Switches for +3V single supply pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG511_5	x AD Quad SPST Switches for +5V single supply pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG44x	ADG511±5	x AD Quad SPST Switches for +/-5V supplies pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16
+Switches	Soild State	ADG41x	ADG411	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG411B	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG411T	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG412	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG412B	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG412T	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG413	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG413B	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG413T	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG444	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG444B	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG444BS	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Switches	Soild State	ADG41x	ADG444S	x AD Quad Percision SPST Switches pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Relays	Complete	SPDT Relay	SPDTRELAY	*Generic type:relay
+Relays	Complete	SPDT Relay	5VSPDT	p AC/DC relay alias:XSPDTRELAY pkg:DIP4
+Relays	Complete	SPDT Relay	12VSPDT	p AC/DC relay alias:XSPDTRELAY {PULLIN=9.6 RESISTANCE=1000} pkg:DIP4
+Relays	Complete	SPDT Relay	24VSPDT	p AC/DC relay alias:XSPDTRELAY {PULLIN=19.2 RESISTANCE=1500} pkg:DIP4
+Relays	Complete	SPDT Relay	120VSPDT	p AC/DC relay alias:XSPDTRELAY {PULLIN=96 RESISTANCE=2000} pkg:DIP4
+Relays	Contacts	SPST-NC	CONTACTS	*Generic alias:XCONTACTS
+Relays	Contacts	SPST-NC	NORMAL	p Contacts alias:XCONTACTS
+Relays	Contacts	SPST-NO	
+Relays	Contacts	SPDT:C	
+Relays	Contacts	SPDT:B	
+Relays	Contacts	SPDT:A	
+Relays	Coil	Solenoid	COIL	*Generic alias:XCOIL
+Relays	Coil	Solenoid	5VCOIL	p AC/DC coil alias:XCOIL
+Relays	Coil	Solenoid	12VCOIL	p AC/DC coil alias:XCOIL {PULLIN=9.6 RESISTANCE=1000}
+Relays	Coil	Solenoid	24VCOIL	p AC/DC coil alias:XCOIL {PULLIN=19.2 RESISTANCE=1500}
+Relays	Coil	Solenoid	120VCOIL	p AC/DC coil alias:XCOIL {PULLIN=96 RESISTANCE=2000}
+Relays	Coil	Polar Latch	
+Relays	Coil	Latch Coil	
+Relays	Coil	Polar Coil	
+Relays	Coil	Circle	
+Relays	Coil	Rectangle	
+Relays	Coil	Standard	
+Digital by Number	47xx	4731	4731	*Dual 64-bit Static Shift Register - type:digital pkg:DIP14 [DVDD=14;DGND=7;](9,10,11,9,10,11,12,13,8,6,5,1,4,3,2)
+Digital by Number	45xx	4585	4585	*4-bit Magnitude Comparator - type:digital pkg:DIP16 [DVDD=16;DGND=8;](15,2,7,10,14,1,9,11,4,6,5,12,3,13)
+Digital by Number	45xx	4556	4556	*Dual Binary 1-of-4 Decoder/Demultiplexer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:3,2,1,4,5,6,7)(B:13,14,15,12,11,10,9)
+Digital by Number	45xx	4555	4555	*Dual Binary 1-of-4 Decoder/Demultiplexer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:3,2,1,4,5,6,7)(B:13,14,15,12,11,10,9)
+Digital by Number	45xx	4543	4543	*BCD-TO-SEVEN Segment Decoder - type:digital pkg:DIP16 [DVDD=16;DGND=8;](4,2,3,5,1,7,6,14,15,13,12,11,10,9)
+Digital by Number	45xx	4539	4539	*Dual 4-channel Data Selector/Multiplexer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](3,4,5,6,1,13,12,11,10,15,2,14,9,7)
+Digital by Number	45xx	4532	4532	*8-bit Priority Encoder - type:digital pkg:DIP16 [DVDD=16;DGND=8;](5,4,3,2,1,13,12,11,10,15,9,7,6,14)
+Digital by Number	45xx	4531	4531	*13-input Parity Checker/Generator - type:digital pkg:DIP16 [DVDD=16;DGND=8;](10,11,12,13,14,15,1,2,3,4,5,6,7,9)
+Digital by Number	45xx	4526	4526	*Programmable 4-bit Binary Down Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](2,14,11,5,3,6,4,10,13,12,7,9,15,1)
+Digital by Number	45xx	4522	4522	*Programmable 4-bit BCD Down Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](2,14,11,5,3,6,4,10,13,12,7,9,15,1)
+Digital by Number	45xx	4520	4520	*Dual 4-bit Binary Counters - type:digital pkg:DIP16 [DVDD=16;DGND=8;](1,2,7,9,10,15,6,5,4,3,14,13,12,11)
+Digital by Number	45xx	4519	4519	*4-bit AND/OR Selector - type:digital pkg:DIP16 [DVDD=16;DGND=8;](15,2,4,6,1,3,5,7,9,14,10,11,12,3)
+Digital by Number	45xx	4518	4518	*Dual Up Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:1,2,7,3,4,5,6)(B:9,10,15,11,12,13,14)
+Digital by Number	45xx	4517	4517	*Dual 64-bit Static Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:7,4,3,1,6,2,5)(B:9,12,13,15,10,14,11)
+Digital by Number	45xx	4516	4516	*BCD UP/DOWN Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](3,13,12,4,1,15,5,10,9,7,6,11,14,2)
+Digital by Number	45xx	4515	4515	*4-bit Latch to 16 Line Decoder - type:digital pkg:DIP24 [DVDD=24;DGND=12;](22,21,3,2,1,23,11,9,10,8,7,6,5,4,18,17,20,19,14,13,16,15)
+Digital by Number	45xx	4514	4514	*4-bit Latch to 16 Line Decoder - type:digital pkg:DIP24 [DVDD=24;DGND=12;](22,21,3,2,1,23,11,9,10,8,7,6,5,4,18,17,20,19,14,13,16,15)
+Digital by Number	45xx	4512	4512	*8-input 3-state Multiplexer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](9,7,6,5,4,3,2,1,13,12,11,15,10,14)
+Digital by Number	45xx	4511	4511	*BCD-TO-7segment Latch/Decoder/Driver - type:digital pkg:DIP16 [DVDD=16;DGND=8;](6,2,1,7,5,4,3,14,15,9,10,11,12,13)
+Digital by Number	45xx	4510	4510	*BCD up/down Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](3,13,12,4,1,15,5,10,9,7,6,11,14,2)
+Digital by Number	45xx	4508	4508	*Dual 4-bit Latch - type:digital pkg:DIP24 [DVDD=24;DGND=12;](A:10,8,6,4,2,1,3,5,7,9,11)(B:22,20,18,16,14,13,15,17,19,21,23)
+Digital by Number	45xx	4505	4505	*64-bit 1-bit/word RAM - type:digital pkg:DIP14 [DVDD=14;DGND=7;](12,11,4,3,2,1,5,6,8,9,10,13)
+Digital by Number	45xx	4502	4502	*Strobed Hex Inverter/Buffer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](15,13,10,1,6,3,12,4,5,7,2,9,11,14)
+Digital by Number	41xx	4104	4104	*Quadruple Low To High Voltage Translator - type:digital pkg:DIP16 [DVDD=16;DGND=8;](12,11,5,4,15,2,3,7,6,9,10,14,13)
+Digital by Number	40xx	4094	4094	*8-Stage Shift/Store Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](2,3,1,15,4,5,6,7,14,13,12,11,9,10)
+Digital by Number	40xx	4093	4093	*CMOS 2-in NAND schmitt trigger - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4086	4086	*4-Wide 2-Input AND-OR-INVERT gate - type:digital pkg:DIP14 [DVDD=14;DGND=7;](1,2,5,6,8,9,12,13,10,11,3)
+Digital by Number	40xx	4085	4085	*Dual 2-input And-Or-Invert Gate - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,12,13,10,3)(B:5,6,8,9,11,4)
+Digital by Number	40xx	4082	4082	*4-input AND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:2,3,4,5,1)(B:9,10,11,12,13)
+Digital by Number	40xx	4081	4081	*CMOS Quad 2-input AND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4078	4078	*8-input NOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](2,3,4,5,9,10,11,12,13)
+Digital by Number	40xx	4077	4077	*Qaud 2-input XNOR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4076	4076	*4-bit D-Type Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](11,12,13,14,10,9,2,1,7,15,3,4,5,6)
+Digital by Number	40xx	4075	4075	*Triple 3-input OR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:3,3,5,6)(B:1,2,8,9)(C:11,12,13,10)
+Digital by Number	40xx	4073	4073	*CMOS 3-input AND gate - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:3,4,5,6)(b:1,2,8,9)(C:11,12,13,10)
+Digital by Number	40xx	4072	4072	*Dual 4-input OR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:2,3,4,5,1)(B:9,10,11,12,13)
+Digital by Number	40xx	4071	4071	*CMOS Quad 2-in OR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4070	4070	*CMOS Qaud 2-input XOR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4069	4069	*CMOS Hex Inverter - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+Digital by Number	40xx	4068	4068	*CMOS 8-input NAND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](2,3,4,5,9,10,11,12,13)
+Digital by Number	40xx	4050	4050	*CMOS Hex Buffer - type:digital pkg:DIP16 [DVDD=1;DGND=8;](A:3,2)(B:5,4)(C:7,6)(D:9,10)(E:11,12)(F:14,15)
+Digital by Number	40xx	4049	4049	*CMOS Hex Inverter - type:digital pkg:DIP16 [DVDD=1;DGND=8;](A:3,2)(B:5,4)(C:7,6)(D:9,10)(E:11,12)(F:14,15)
+Digital by Number	40xx	4044	4044	*Quad 3-state R-S Latch - type:digital pkg:DIP16 [DVDD=16;DGND=8;](14,15,12,11,6,7,4,3,5,2,9,10,1)
+Digital by Number	40xx	4043	4043	*Quad 3-state R-S Latch - type:digital pkg:DIP16 [DVDD=16;DGND=8;](14,15,12,11,6,7,4,3,5,2,9,10,1)
+Digital by Number	40xx	4042	4042	*Quad Transparent Latch - type:digital pkg:DIP16 [DVDD=16;DGND=8;](14,13,7,4,6,5,3,2,9,10,12,11,15,1)
+Digital by Number	40xx	4041	4041	*Qaud True/Complement Buffer - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:3,2,1)(B:6,5,4)(C:10,9,8)(D:13,12,11)
+Digital by Number	40xx	4040	4040	*12-bit Binary Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](10,11,9,7,6,5,3,2,4,13,12,14,15,1)
+Digital by Number	40xx	4035	4035	*4-bit Parallel-In/Out Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](12,11,10,9,7,4,3,6,5,2,1,15,14,13)
+Digital by Number	40xx	4031	4031	*Dual 64-bit Static Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](15,10,1,2,9,7,6)
+Digital by Number	40xx	4030	4030	*CMOS Qaud 2-input XOR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4029	4029	*Binary/Decade Up/Down Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](3,13,12,4,1,15,5,9,10,7,6,11,14,2)
+Digital by Number	40xx	4028	4028	*4-bit BCD to decimal decoder - type:digital pkg:DIP16 [DVDD=16;DGND=8;](11,12,13,10,3,14,2,15,1,6,7,4,9,5)
+Digital by Number	40xx	4027	4027	*J-K FLIP FLOP - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:9,10,13,11,12,14,15)(B:7,6,3,5,4,2,1)
+Digital by Number	40xx	4025	4025	*CMOS 3-input NOR - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:3,4,5,6)(B:1,2,8,9)(C:11,12,13,10)
+Digital by Number	40xx	4024	4024	*7-Stage Ripple Counter - type:digital pkg:DIP14 [DVDD=14;DGND=7;](1,2,12,11,9,6,5,4,3)
+Digital by Number	40xx	4023	4023	*CMOS 3-input NAND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:3,4,5,6)(B:1,2,8,9)(C:11,12,13,10)
+Digital by Number	40xx	4022	4022	*Octal Counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](13,14,15,12,10,5,4,11,7,3,1,2)
+Digital by Number	40xx	4021	4021	*8-bit Static Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](1,15,14,13,4,5,6,7,9,11,10,2,12,3)
+Digital by Number	40xx	4020	4020	*14-bit Binary Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](10,11,9,7,5,4,6,13,12,14,15,1,2,3)
+Digital by Number	40xx	4019	4019	*Quadruple 2-input Multiplexer - type:digital pkg:DIP16 [DVDD=16;DGND=8;](15,2,4,6,1,3,5,7,9,14,10,11,12,3)
+Digital by Number	40xx	4018	4018	*Presettable Dvide By N Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](12,9,7,3,2,1,10,14,15,5,4,6,11,13)
+Digital by Number	40xx	4017	4017	*5-stage Johnson Counter - type:digital pkg:DIP16 [DVDD=16;DGND=8;](13,14,15,3,2,4,7,10,1,5,6,9,11,12)
+Digital by Number	40xx	4015	4015	*Dual 4-bit Static Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](A:7,9,6,5,4,3,10)(B:15,1,14,13,12,11,2)
+Digital by Number	40xx	4014	4014	*8-bit Static Shift Register - type:digital pkg:DIP16 [DVDD=16;DGND=8;](1,15,14,13,4,5,6,7,9,11,10,2,12,3)
+Digital by Number	40xx	4013	4013	*Dual D type Flip-Flop - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:6,5,3,4,2,1)(B:8,9,11,10,12,13)
+Digital by Number	40xx	4012	4012	*CMOS 4-input NAND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:2,3,4,5,1)(B:9,10,11,12,13)
+Digital by Number	40xx	4011	4011	*CMOS 2-in NAND - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4008	4008	*4-bit Binary Full Adder - type:digital pkg:DIP16 [DVDD=16;DGND=8;](1,3,5,7,15,2,4,6,9,10,11,12,13,14)
+Digital by Number	40xx	4006	4006	*18-Stage Static Shift Register - type:digital pkg:DIP14 [DVDD=14;DGND=7;](1,5,4,6,3,9,8,12,11,10,13)
+Digital by Number	40xx	4002	4002	*4-in NOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](2,3,4,5,1)(B:9,10,11,12,13)
+Digital by Number	40xx	4001	4001	*CMOS 2-in NOR Buffer - type:digital pkg:DIP14 [DVDD=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:8,9,10)(D:12,13,11)
+Digital by Number	40xx	4000	4000	*3-in NOR and INVERTER - type:digital pkg:DIP14 [DVDD=14;DGND=7;](3 4 5 11 12 13 8 9 10 6)
+Digital by Number	74xx	7496	74LS96	*5-bit Shift Register - type:digital pkg:DIP16 [DVCC=16;DGND=8;](9,8,1,2,3,4,6,7,16,15,14,13,11,10)
+Digital by Number	74xx	7495	74LS95	*4-bit Shift Register - type:digital pkg:DIP14 [DVCC=14;DGND=7;](6,9,8,5,4,3,2,1,10,11,12,13)
+Digital by Number	74xx	7493	74LS93	*4-bit Binary Counter - type:digital pkg:DIP14 [DVCC=5;DGND=10;](2,3,14,1,11,8,9,12)
+Digital by Number	74xx	7492	74LS92	*Divide by Twelve Counter - type:digital pkg:DIP14 [DVCC=14;DGND=7;](6,7,14,1,8,9,11,12)
+Digital by Number	74xx	7490	74LS90	*4-bit Decade Counter - type:digital pkg:DIP14 [DVCC=5;DGND=10;](6,7,2,3,14,1,11,8,9,12)
+Digital by Number	74xx	7486	74LS86	*LS Qaud 2-input XOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7485	74LS85	*4-bit Magnitude Comparator - type:digital pkg:DIP16 [DVCC=16;DGND=8;](15,13,12,10,1,14,11,9,2,3,4,7,6,5)
+Digital by Number	74xx	7483	74LS83A	*LS 4-bit Binary Full Adder - type:digital pkg:DIP16 [DVCC=5;DGND=12;](1,3,8,10,16,4,7,11,13,15,2,6,9,14)
+Digital by Number	74xx	7476 1/2	
+Digital by Number	74xx	7476	74LS76	*Dual JK Flip-Flop - type:digital pkg:DIP16 [DVCC=16;DGND=8;](4,16,1,2,3,9,12,6,7,8,15,14,11,10)
+Digital by Number	74xx	7475	74LS75	*4-bit Bistable Latches - type:digital pkg:DIP16 [DVCC=5;DGND=12;](7,6,4,3,2,13,9,8,10,11,15,14,16,1)
+Digital by Number	74xx	7474 1/2	
+Digital by Number	74xx	7474	74LS74	*Dual D-type Filp-Flop - type:digital pkg:DIP14 [DVCC=14;DGND=7;](3,2,4,1,11,12,10,13,5,6,9,8)
+Digital by Number	74xx	7473 1/2	
+Digital by Number	74xx	7473	74LS73	*Dual JK Flip-Flop - type:digital pkg:DIP14 [DVCC=4;DGND=11;](14,3,1,2,7,10,5,6,12,13,9,8)
+Digital by Number	74xx	7448	74LS48	*BCD-TO-7_SEGMENT DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	74xx	7448	74LS248	*BCD-TO-7_SEGMENT DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	74xx	7447	74LS47	*BCD-TO-7_SEGMENT O/C DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	74xx	7447	74LS247	*BCD-TO-7_SEGMENT O/C DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	74xx	7445	7445	*4-bit BCD to decimal decoder - type:digital pkg:DIP16 [DVCC=16;DGND=8;](12,13,14,15,1,2,3,4,5,6,7,9,10,11)
+Digital by Number	74xx	7442	74LS42	*4-bit BCD to decimal decoder type:digital pkg:DIP16 [DVCC=16;DGND=8;](12,13,14,15,11,10,9,7,6,5,4,3,2,1)
+Digital by Number	74xx	7440	74LS20	*LS 4-input NAND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,4,5,6,7)(B:9,10,12,13,8)
+Digital by Number	74xx	7440	74LS40	*LS 4-input NAND Buffer - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,4,5,6,7)(B:9,10,12,13,8)
+Digital by Number	74xx	7439	7439	*2-in O/C NAND with buffered outputs - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:2,3,1)(B:5,6,4)(C:8,9,10)(D:11,12,13)
+Digital by Number	74xx	7438	74LS38	*2-in O/C NAND with buffered outputs - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7437	74LS37	*LS 2-in NAND with buffered outputs - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7433	74LS33	*2-in NOR O/C output - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7432	74LS32	*LS Quad 2-in OR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7430	74LS30	*LS 8-input NAND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,2,3,4,5,6,11,12,8)
+Digital by Number	74xx	7428	7428	*STD 2-in NOR Buffer - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7427	74LS27	*LS 3-in NOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,13,12)(B:3,4,5,6)(C:11,10,9,8)
+Digital by Number	74xx	7425	74LS25	*Dual 4-input NOR gate - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:5,4,2,1,3,6)(B:9,10,12,13,11,8)
+Digital by Number	74xx	7425	7425	*Dual 4-input NOR gate - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:5,4,2,1,3,6)(B:9,10,12,13,11,8)
+Digital by Number	74xx	7422	74LS22	*4-input O/C output NAND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,4,5,6)(B:9,10,12,13,8)
+Digital by Number	74xx	7421	74LS21	*4-input AND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,4,5,6)(B:9,10,12,13,8)
+Digital by Number	74xx	7417	
+Digital by Number	74xx	7416	
+Digital by Number	74xx	7415	74LS15	*3-input O/C AND gate - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+Digital by Number	74xx	7414	74LS14	*LS Hex Inverter with hysteresis - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+Digital by Number	74xx	7413	74LS13	*LS 4-input NAND with hysteresis - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,4,5,6)(B:9,10,12,13,8)
+Digital by Number	74xx	7412	74LS12	*3-input O/C output NAND gate - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+Digital by Number	74xx	7411	74LS11	*LS 3-input AND gate - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+Digital by Number	74xx	7410	74LS10	*LS 3-input NAND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,13,12)(B:3,4,5,6)(C:9,10,11,8)
+Digital by Number	74xx	7409	74LS09	*LS Quad 2-input O/C output - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7408	74LS08	*LS Quad 2-input AND - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	74xx	7404	74LS04	*LS Hex Inverter - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2)(B:3,4)(C:5,6)(D:9,8)(E:11,10)(F:13,12)
+Digital by Number	741xx	74107	74LS107	*Dual JK Flip-Flop - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,4,12,13,8,11,9,10,3,2,5,6)
+Digital by Number	741xx	74109 1/2	
+Digital by Number	741xx	74109	74LS109	*Dual JK FLIP FLOP - type:digital pkg:DIP16 [DVCC=16;DGND=8;](4,5,1,2,3,6,7,12,11,15,14,13,10,9)
+Digital by Number	741xx	74112	74LS112	*LS Dual JK FLIP FLOP - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3,2,1,4,15,11,12,13,10,14,5,6,9,7)
+Digital by Number	741xx	74113 1/2	
+Digital by Number	741xx	74113	74LS113	*LS Dual JK FLIP FLOP - type:digital pkg:DIP14 [DVCC=14;DGND=7;](3,2,1,4,11,12,13,10,5,6,9,8)
+Digital by Number	741xx	74125 1/4	
+Digital by Number	741xx	74125	74LS125	*LS Quad 3-state Buffers - type:digital pkg:DIP14 [DVCC=14;DGND=7;](13,12,10,9,4,5,1,2,11,8,6,3)
+Digital by Number	741xx	74126 1/4	
+Digital by Number	741xx	74126	74LS126	*LS quad 3-state buffers  - type:digital pkg:DIP14 [DVCC=14;DGND=7;](13,12,10,9,4,5,1,2,11,8,6,3)
+Digital by Number	741xx	74133	74S133	*S 13-input NAND - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,2,3,4,5,6,7,10,11,12,13,14,15,9)
+Digital by Number	741xx	74136	74LS136	*2-in O/C XOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:4,5,6)(C:9,10,8)(D:12,13,11)
+Digital by Number	741xx	74138	74LS138	*LS 1-of-8 decoder/demultiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3,2,1,6,5,4,7,9,10,11,12,13,14,15)
+Digital by Number	741xx	74139	74LS139	*LS Dual 1-of-4 Decoder/demultiplexer - type: digital pkg:DIP16 [DVCC=16;DGND=8;](3,2,1,13,14,15,7,6,5,4,9,10,11,12)
+Digital by Number	741xx	74147	74147	*10-to-4 line priority encoder - type:digital pkg:DIP16 [DVCC=16;DGND=8;](10,5,4,3,2,1,13,12,11,9,7,6,14)
+Digital by Number	741xx	74147	74LS147	*10-to-4 line priority encoder - type:digital pkg:DIP16 [DVCC=16;DGND=8;](10,5,4,3,2,1,13,12,11,9,7,6,14)
+Digital by Number	741xx	74148	74148	*STD 8-to-3 line priority encoder - type:digital pkg:DIP16 [DVCC=16;DGND=8;](5,4,3,2,1,13,12,11,10,15,9,7,6,14)
+Digital by Number	741xx	74148	74LS148	*LS 8-to-3 line priority encoder - type:digital pkg:DIP16 [DVCC=16;DGND=8;](5,4,3,2,1,13,12,11,10,15,9,7,6,14)
+Digital by Number	741xx	74151	74LS151	*LS 8-input Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](12,13,14,15,1,2,3,4,7,9,10,11,5,6)
+Digital by Number	741xx	74153	74LS153	*LS 4-to-1 Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3,4,5,6,2,14,13,12,11,10,1,15,7,9)
+Digital by Number	741xx	74154	74LS154	*LS 1-of-16 Decoder/Demultiplexer - type:digital pkg:DIP24 [DVCC=24;DGND=12;](19,18,20,21,22,23,17,16,15,14,13,11,10,9,8,7,6,5,4,3,2,1)
+Digital by Number	741xx	74155	74LS155	*Dual 2-to-4 Decoder/Demultiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,2,3,13,14,15,4,5,6,7,12,11,10,9)
+Digital by Number	741xx	74155	74LS156	*Dual 2-to-4 o/c Decoder/Demultiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,2,3,13,14,15,4,5,6,7,12,11,10,9)
+Digital by Number	741xx	74157	74LS157	*LS Quad 2-in Data Selector/Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,3,2,6,5,10,11,13,14,15,4,7,9,12)
+Digital by Number	741xx	74158	74LS158	*LS Quad 2-in Data Selector/Multiplexer - type:digital pkg:16 [DVCC=16;DGND=8;](1,3,2,6,5,10,11,13,14,15,4,7,9,12)
+Digital by Number	741xx	74160A	74LS160A	*LS BCD Decade counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,9,6,5,4,3,1,15,11,12,13,14)
+Digital by Number	741xx	74161A	74LS161A	*LS 4-bit binary counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,6,5,4,3,9,1,15,11,12,13,14)
+Digital by Number	741xx	74162A	74LS162A	*LS 4-bit BCD counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,9,6,5,4,3,1,15,11,12,13,14)
+Digital by Number	741xx	74163A	74LS163A	*LS 4-bit binary counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,9,6,5,4,3,1,15,11,12,13,14)
+Digital by Number	741xx	74164	74LS164	*8-bit Serial-in Parallel-out Shift Register - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,2,8,9,13,12,11,10,6,5,4,3)
+Digital by Number	741xx	74165	74LS165	*8-bit Serial/Parallel-in to Serial-out Shift Register - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,5,4,3,14,13,12,11,10,1,15,2,7,9)
+Digital by Number	741xx	74166	74LS166	*FAST 8-bit Serial/Parallel-in to Serial-out Shift Register - type:digital pkg:DIP16 [DVCC=16;DGND=8;](14,12,11,10,5,4,3,2,1,15,7,6,9,13)
+Digital by Number	741xx	74168	74LS168A	*LS 4-bit Bidirectional Decade counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,6,5,4,3,9,1,15,11,12,13,14)
+Digital by Number	741xx	74169	74LS169A	*LS 4-bit Bidirectional counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7,10,2,6,5,4,3,9,1,15,11,12,13,14)
+Digital by Number	741xx	74173	74LS173	*LS Quad D-type 3-state Flip-Flop - type:digital pkg:DIP16 [DVCC=16;DGND=8;](15,9,10,7,11,12,13,14,1,2,6,5,4,3)
+Digital by Number	741xx	74174	74LS174	*Hex D Flip-Flops - type:digital pkg:DIP16 [DVCC=16;DGND=8;](9 14 13 11 6 4 3 1 15 12 10 7 5 2)
+Digital by Number	741xx	74175	74LS175	*LS Qaud D Flip-Flops - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1 9 13 12 5 4 15 14 10 11 7 6 2 3)
+Digital by Number	741xx	74181	74LS181	*LS 4-bit Arithmetic Logic Unit - type:digital pkg:DIP24 [DVCC=24;DGND=12;](3 4 5 6 19 21 23 2 18 20 22 1 7 8 16 14 17 15 13 11 10 9)
+Digital by Number	741xx	74182	74S182	*S Look-Ahead Carry Generator - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,5,15,14,2,1,4,3,13,7,10,9,11,12)
+Digital by Number	741xx	74190	74LS190	*LS 4-bit Bidirectional Decade counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](4,14,11,5,9,10,1,15,13,12,7,6,2,3)
+Digital by Number	741xx	74191	74LS191	*LS 4-bit Presettable BCD up/down counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](4,14,11,5,9,10,1,15,13,12,7,6,2,3)
+Digital by Number	741xx	74192	74LS192	*LS 4-bit Presettable BCD up/down counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](5,4,11,14,9,10,1,15,12,13,7,6,2,3)
+Digital by Number	741xx	74193	74LS193	*4-bit Presettable binary up/down counter - type:digital pkg:DIP16 [DVCC=16;DGND=8;](5,4,11,14,9,10,1,15,12,13,7,6,2,3)
+Digital by Number	741xx	74194	74LS194	*LS 4-bit Bidirectional Universal Shift Register - type:digital pkg:DIP16 [DVCC=16;DGND=8;](11,10,9,2,7,1,6,5,4,3,12,13,14,15)
+Digital by Number	741xx	74195	74LS195	*LS 4-bit Parallel Access Shift Register - type:digital pkg:DIP16 [DVCC=16;DGND=8;](2,3,10,9,7,6,5,4,1,11,12,13,14,15)
+Digital by Number	741xx	74197	74LS197	*4-bit Binary Ripple Counter - type:digital pkg:DIP14 [DVCC=14;DGND=7;](13,1,8,6,11,3,10,4,12,2,9,5)
+Digital by Number	741xx	74199	74LS199	*LS 8-bit Parallel Access Shift Register - type:digital pkg:DIP24 [DVCC=24;DGND=12;](2,1,13,11,22,20,18,16,9,7,5,3,23,14,21,19,17,15,10,8,6,4)
+Digital by Number	741xx	74199	74199	*STD 8-bit Parallel Access Shift Register - type:digital pkg:DIP24 [DVCC=24;DGND=12;](2,1,13,11,22,20,18,16,9,7,5,3,23,14,21,19,17,15,10,8,6,4)
+Digital by Number	742xx	74240	74LS240	*LS Octal 3-state Inverter - type:digital pkg:DIP20 [DVCC=20;DGND=10;](8,6,4,2,11,13,15,17,12,14,16,18,9,7,5,3,1,19)
+Digital by Number	742xx	74241	74LS241	*LS Octal 3-state Buffer - type:digital pkg:DIP20 [DVCC=20;DGND=10;](8,6,4,2,11,13,15,17,12,14,16,18,9,7,5,3,1,19)
+Digital by Number	742xx	74242	74LS242	*Quad Inverting 3-state Transceivers - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,6,5,4,3,13,8,9,10,11)
+Digital by Number	742xx	74243	74LS243	*LS Quad 3-state Transceivers - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,6,5,4,3,13,8,9,10,11)
+Digital by Number	742xx	74244 1/2	
+Digital by Number	742xx	74244	74LS244	*LS Octal 3-state Buffer - type:digital pkg:DIP20 [DVCC=20;DGND=10;](8,6,4,2,11,13,15,17,12,14,16,18,9,7,5,3,1,19)
+Digital by Number	742xx	74245	74LS245	*LS Octal 3-state Transceivers - type:digital pkg:DIP20 [DVCC=20;DGND=10;](9,8,7,6,5,4,3,2,11,12,13,14,15,16,17,18,19,1)
+Digital by Number	742xx	74247	74LS247	*BCD-TO-7_SEGMENT O/C DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	742xx	74248	74LS248	*BCD-TO-7_SEGMENT DECODER - type:digital pkg:DIP16 [DVCC=16;DGND=8;](6,2,1,7,3,5,14,15,9,10,11,12,13,4)
+Digital by Number	742xx	74251	74LS251	*LS 8-input 3-state Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](12,13,14,15,1,2,3,4,9,10,11,7,6,5)
+Digital by Number	742xx	74253	74LS253	*LS 4-to-1 3-state Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3,4,5,6,2,14,13,12,11,10,1,15,7,9)
+Digital by Number	742xx	74256	74LS256	*LS Dual 4-bit latch - type:digital pkg:DIP16 [DVCC=16;DGND=8;](15,14,1,2,3,13,7,6,5,4,12,11,10,9)
+Digital by Number	742xx	74257	74LS257	*LS Quad 2-in 3-state Data Selector/Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,3,2,6,5,10,11,13,14,15,4,7,9,12)
+Digital by Number	742xx	74258	74LS258	*LS Quad 2-in 3-state Data Selector/Multiplexer - type:digital pkg:16 [DVCC=16;DGND=8;](1,3,2,6,5,10,11,13,14,15,4,7,9,12)
+Digital by Number	742xx	74259	74LS259	*LS 8-bit Addressable latch - type:digital pkg:DIP16 [DVCC=16;DGND=8;](15,14,1,2,3,13,12,11,10,9,7,6,5,4)
+Digital by Number	742xx	74266	74LS266	*2-in O/C XNOR - type:digital pkg:DIP14 [DVCC=14;DGND=7;](A:1,2,3)(B:5,6,4)(C:9,10,8)(D:12,13,11)
+Digital by Number	742xx	74273	74LS273	*LS Octal D Flip-Flops - type:digital pkg:DIP20 [DVCC=20;GND=10;](1,11,18,17,14,13,8,7,4,3,19,16,15,12,9,6,5,2)
+Digital by Number	742xx	74280	74S280	*S 9-bit Odd/Even Parity Generator/Checker - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1 13 12 11 10 9 8 2 4 5 6)
+Digital by Number	742xx	74280	74LS280	*LS 9-bit Odd/Even Parity Generator/Checker - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1 13 12 11 10 9 8 2 4 5 6)
+Digital by Number	742xx	74283	74LS283	*LS 4-bit Full Adder With Fast Carry - type:digital pkg:DIP16 [DVCC=16;DGND=8;](12 14 3 5 11 15 2 6 7 10 13 1 4 9)
+Digital by Number	742xx	74290	74LS290	*4-bit Decade Counter - type:digital pkg:DIP14 [DVCC=14;DGND=7;](1,3,12,13,10,11,8,4,5,9)
+Digital by Number	742xx	74293	74LS293	*4-bit Binary Counter - type:digital pkg:DIP14 [DVCC=14;DGND=7;](12,13,10,11,8,4,5,9)
+Digital by Number	742xx	74298	74LS298	*LS Quad 2-input Multiplexer With Storage - type:digital pkg:DIP16 [DVCC=16;DGND=8;](7 9 4 3 6 5 1 2 10 11 12 13 14 15)
+Digital by Number	743xx	74352	74LS352	*LS Dual 4-to-1 Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3,4,5,6,2,14,13,12,11,10,1,15,7,9)
+Digital by Number	743xx	74353	74LS353	*LS Dual 3-state 4-to-1 Multiplexer - type:digital pkg:DIP16 [DVCC=16;DGND=8;](3 4 5 6 2 14 13 12 11 10 1 15 7 9)
+Digital by Number	743xx	74373	74LS373	*LS Octal 3-state Transparent Latch - type:digital pkg:DIP20 [DVCC=20;DGND=10;](18,17,14,13,8,7,4,3,19,16,15,12,9,6,5,2,1,11)
+Digital by Number	743xx	74374	74LS374	*LS Octal 3-state D flip-flops - type:digital pkg:DIP20 [DVCC=20;DGND=10;](18,17,14,13,8,7,4,3,19,16,15,12,9,6,5,2,1,11)
+Digital by Number	743xx	74375	74LS375	*Quad Bistable Latch - type:digital pkg:DIP16 [DVCC=16;DGND=8;](15,9,4,7,1,12,13,14,11,10,5,6,3,2)
+Digital by Number	743xx	74377	74LS377	*LS Octal D Flip-Flops with enable - type:digital pkg:DIP20 [DVCC=20;DGND=10;](1,11,18,17,14,13,8,7,4,3,19,16,15,12,9,6,5,2)
+Digital by Number	743xx	74378	74LS378	*LS Hex D Flip-Flops with enable - type:digital pkg:DIP16 [DVCC=16;DGND=8;](9,14,13,11,6,4,3,1,15,12,10,7,5,2)
+Digital by Number	745xx	74568	74LS568	*LS 4-bit BCD Decade Up/Down Counter - type:digital pkg:DIP20 [DVCC=20;DGND=10;](9,7,12,2,1,11,6,5,4,3,8,17,18,19,13,14,15,16)
+Digital by Number	745xx	74569	74LS569	*LS 4-bit Binary Up/Down Counter - type:digital pkg:DIP20 [DVCC=20;DGND=10;](9,7,12,2,1,11,6,5,4,3,8,17,18,19,13,14,15,16)
+Digital Animated	Displays	StopLight	
+Digital Animated	Animated	Window	
+Digital Animated	Animated	Rocket	
+Digital Animated	Animated	Car	
+Passive Components	Resistor Packs	RSIP8:A	
+Passive Components	Resistor Packs	RSIP8	
+Passive Components	Resistor Packs	RSIP6:A	
+Passive Components	Resistor Packs	RSIP6	
+Passive Components	Resistor Packs	RSIP10:A	
+Passive Components	Resistor Packs	RSIP10	
+Passive Components	Resistor Packs	RDIP16:A	
+Passive Components	Resistor Packs	RDIP16	
+Passive Components	Resistor Packs	RDIP14:A	
+Passive Components	Resistor Packs	RDIP14	
+Passive Components	Resistors	Resistor	
+Passive Components	Resistors	Resistor:A	
+Passive Components	Resistors	SemiResistor	RESISTOR	*Deafult semiconductor resistor
+Passive Components	Resistors	SemiResistorA	
+Passive Components	Resistors	Var Resistor	
+Passive Components	Resistors	Var ResistorA	
+Passive Components	Capacitors	Capacitor	
+Passive Components	Capacitors	Polar Cap	
+Passive Components	Capacitors	SemiCapacitor	CAP	p Deafult semiconductor capacitor
+Passive Components	Capacitors	Var Capacitor	
+Passive Components	Inductors	Coil 3T	
+Passive Components	Inductors	Coil 5T	
+Passive Components	Inductors	Inductor	
+Passive Components	Inductors	Var Inductor	
+Active Components	Vacuum Tubes	Pentode	
+Active Components	Vacuum Tubes	Pentode:H	
+Active Components	Vacuum Tubes	Tetrode	7199P	*Vacuum Tube Tetrode (Audio freq.)
+Active Components	Vacuum Tubes	Tetrode	5879	*Vacuum Tube Tetrode (Audio freq.)
+Active Components	Vacuum Tubes	Tetrode	6L6GC	*Vacuum Tube Tetrode (Audio freq.)
+Active Components	Vacuum Tubes	Tetrode:H	
+Active Components	Vacuum Tubes	Triode	6SN7	*Vacuum Tube Triode (Audio freq.)
+Active Components	Vacuum Tubes	Triode	12AU7	*Vacuum Tube Triode (Audio freq.) pkg:VT-9 (A:1,2,3)(B:6,7,8)
+Active Components	Vacuum Tubes	Triode	12AX7	*Vacuum Tube Triode (Audio freq.) pkg:VT-9 (A:1,2,3)(B:6,7,8)
+Active Components	Vacuum Tubes	Triode	7199T	*Vacuum Tube Triode (Audio freq.)
+Active Components	Vacuum Tubes	Triode:H	
+Active Components	Vacuum Tubes	Vac Diode	
+Active Components	Vacuum Tubes	Vac Diode:H	
+Active Components	Diodes	Diode	DIODE	p Default diode PARAMeter values pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N34	p60V 85mA Ge Signal Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N914	p100V 80mA Si Switching Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N914A	p75V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N914B	p75V 100mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4001	p50V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4002	p100V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4003	p200V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4004	p400V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4005	p600V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4006	p800V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4007	p1000V 1A Si GenPurpose Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4148	p75V 10mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4149	p75V 10mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4150	p50V 200mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4151	p50V 50mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4152	p30V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4153	p50V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4154	p25V 30mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4244	p15V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4305	p50V 10mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4446	p20V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4447	p20V 20mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4448	p20V 100mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4454	p50V 10mA Si Computer Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4934	p400V 1A Si Rectifier pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N4938	p175V 100mA Si HiVoltage Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N5400	p50V 3A Si Rectifier pkg:DO-201 1,2
+Active Components	Diodes	Diode	1N5401	p100V 3A Si Rectifier pkg:DO-201 1,2
+Active Components	Diodes	Diode	1N5402	p200V 3A Si Rectifier pkg:DO-201 1,2
+Active Components	Diodes	Diode	1N5404	p400V 3A Si Rectifier pkg:DO-201 1,2
+Active Components	Diodes	Diode	1N5406	p600V 3A Si Rectifier pkg:DO-201 1,2
+Active Components	Diodes	Diode	1N5407	p800V 3000mA 3us Si Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode	1N5408	p1000V 3000mA 3us Si Diode pkg:DIODE0.4 A,K
+Active Components	Diodes	Diode ACK	
+Active Components	Diodes	Diode AKA	BAV70	x70V 200mA 6ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+Active Components	Diodes	Diode KAK	BAW56	*70V 200mA 6ns Si Dual Switching Diode pkg:SOT-23 2,1,3
+Active Components	Diodes	FW Bridge	BRIDGE	x Default Bridge
+Active Components	Diodes	FW Bridge	18DB05	x50V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB1	x100V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB2	x200V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB4	x400V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB6	x600V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB8	x800V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	18DB10	x1000V 1.8A Si pkg:D-2
+Active Components	Diodes	FW Bridge	2KBP005	x50V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP01	x100V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP02	x200V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP04	x400V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP06	x600V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP08	x800V 2A Si pkg:D-44
+Active Components	Diodes	FW Bridge	2KBP10	x1000V 2A Si pkg:D-44
+Active Components	Diodes	Schottky	SKYDIODE	p Default schottky diode parameters pkg:DO-41 1,2
+Active Components	Diodes	Schottky	11DQ03	p MCE 30V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	11DQ04	p MCE 40V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	11DQ05	p MCE 50V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	11DQ06	p MCE 60V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	11DQ09	p MCE 90V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	11DQ10	p MCE 100V 1.1A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N5828	p MCE 40V 30A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N5834	p MCE 40V 60A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6095	p MCE 30V 25A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6096	p MCE 40V 25A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6097	p MCE 30V 50A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6098	p MCE 40V 50A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6391	p MCE 45V 25A pkg:DIODE0.4 A,K
+Active Components	Diodes	Schottky	1N6392	p MCE 45V 60A pkg:DIODE0.4 A,K
+Active Components	Diodes	Varactor	BBY31	p ZTX 28V Cd=1.80pF/2.80pF Si pkg:SOT-23 3,1
+Active Components	Diodes	Varactor	BBY40	p ZTX 28V Cd=4.30pF/6.00pF Si pkg:SOT-23 3,1
+Active Components	Diodes	Varactor:A	
+Active Components	Diodes	Zener Diode	ZENER	p Default Zener 10V @ 10mA pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N746	p3.3V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N747	p3.6V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N748	p3.9V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N749	p4.3V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N750	p4.7V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N751	p5.1V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N752	p5.6V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N753	p6.2V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N754	p6.8V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N755	p7.5V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N756	p8.2V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N757	p9.1V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N758	p10V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N759	p12V 500mW Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4728	p3.3V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4729	p3.6V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4730	p3.9V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4731	p4.3V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4732	p4.7V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4733	p5.1V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4734	p5.6V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4735	p6.2V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4736	p6.8V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4737	p7.5V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4738	p8.2V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4739	p9.1V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4740	p10V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4741	p11V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4742	p12V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4743	p13V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4744	p15V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4745	p16V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4746	p18V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4747	p20V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4748	p22V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4749	p24V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4750	p27V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4751	p30V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4752	p33V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4753	p36V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4754	p39V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4755	p43V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4756	p47V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4757	p51V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4758	p56V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4759	p62V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4760	p68V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4761	p75V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4762	p82V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4763	p91V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener Diode	1N4764	p100V 1W Si Zener pkg:DIODE0.4 A,K
+Active Components	Diodes	Zener AKA	DZ23C5V1	x5.1V 350mW Si Dual Zener pkg:TO236AA 1,3,2
+Active Components	Darlingtons	NPN Darling1	NPN1	x Default Darlington Transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BCV27	x Si 350mW 30V 1.2A pkg:SOT-23 1,3,2
+Active Components	Darlingtons	NPN Darling1	2N6427	x Si 625mW 40V 1.2A pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	2N7052	x Si 625mW 100V 1.5A pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	2N7053	x Si 625mW 100V 1.5A pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	2N6426	x Si 625mW 40V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	2N6427	x Si 625mW 40V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BC372	x Si 625mW 100V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BC373	x Si 625mW 100V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BC517	x Si 625mW 30V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BC618	x Si 625mW 55V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	BSP52T1	x Si 800mW 80V 500mA pkg:SOT-223 2,1,3
+Active Components	Darlingtons	NPN Darling1	MMBT6427LT1	x Si 225mW 40V 500mA pkg:SOT-23 3,1,2
+Active Components	Darlingtons	NPN Darling1	MMBTA13LT1	x Si 225mW 30V 300mA pkg:SOT-23 3,1,2
+Active Components	Darlingtons	NPN Darling1	MMBTA14LT1	x Si 225mW 30V 300mA pkg:SOT-23 3,1,2
+Active Components	Darlingtons	NPN Darling1	MPQ6426	x Si 500mW 30V 500mA Quad pkg:DIP14 (A:1,2,3)(B:7,6,5)(C:8,9,10)(D:14,13,12)
+Active Components	Darlingtons	NPN Darling1	MPS6724	x Si 1000mW 40V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPS6725	x Si 1000mW 50V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA13	x Si 625mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA14	x Si 625mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA25	x Si 625mW 40V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA26	x Si 625mW 50V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA27	x Si 625mW 60V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA29	x Si 1500mW 100V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSA28	x Si 1500mW 80V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSW13	x Si 1000mW 30V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSW14	x Si 1000mW 30V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSW45	x Si 1000mW 40V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	MPSW45A	x Si 1000mW 50V 1000mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling1	PZTA14T1	x Si 1500mW 30V 300mA pkg:SOT-223 2,1,3
+Active Components	Darlingtons	NPN Darling2	NPN2	x Default darlington NPN transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling3	NPN3	x Default NPN Darlington Transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	NPN Darling3	TIP141	x80V  10A
+Active Components	Darlingtons	PNP Darling1	PNP1	x Default PNP Darlington Transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	BCV26	x Si 350mW 30V 1.2A pkg:SOT-23 1,3,2
+Active Components	Darlingtons	PNP Darling1	MPSA64	x Si 625mW 30V 1.2A pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	BSP62T1	x Si 1500mW 80V 500mA pkg:SOT-223 2,1,3
+Active Components	Darlingtons	PNP Darling1	MMBTA63LT1	x Si 300mW 30V 500mA pkg:SOT-23 3,1,2
+Active Components	Darlingtons	PNP Darling1	MMBTA64LT1	x Si 300mW 30V 500mA pkg:SOT-23 3,1,2
+Active Components	Darlingtons	PNP Darling1	MPSA62	x Si 625mW 20V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSA63	x Si 625mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSA64	x Si 625mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSA75	x Si 625mW 40V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSA77	x Si 625mW 60V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSW63	x Si 1000mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	MPSW64	x Si 1000mW 30V 500mA pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling1	PZTA64T1	x Si 1500mW 30V 500mA pkg:SOT-223 2,1,3
+Active Components	Darlingtons	PNP Darling2	PNP2	x Default PNP Darlington Transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling3	PNP3	x Default PNP Darlington Transistor pkg:TO-92B 1,2,3
+Active Components	Darlingtons	PNP Darling3	2N6040	x60V 8A PNP Darlington Transistor
+Active Components	Darlingtons	PNP Darling3	2N6042	x100V 8A PNP Darlington Transistor
+Active Components	Matched Transistors	QuadNPN	MAT04	x AD Si Quad Matched NPN 40V 30mA 300MHz pkg:DIP14 1,2,3,4,5,6,7,8,9,10,12,13,14
+Active Components	Matched Transistors	DualPNP	MAT02	x AD Si Dual Matched PNP 500mw 40V 20mA 200MHz pkg:TO99 1,2,3,5,6,7
+Active Components	Matched Transistors	DualPNP	MAT03	x AD Si Dual Matched PNP 500mw 36V 20mA 190MHz pkg:TO99 1,2,3,5,6,7
+Active Components	Matched Transistors	DualPNP	SSM2220	x AD Si Dual Matched PNP 36V 20mA 190MHz pkg:Dip8 1,2,3,6,7,8
+Active Components	Matched Transistors	DualNPN	SSM2210	x AD Si Dual Matched NPN 40V 20mA 200MHz pkg:DIP8 1,2,3,6,7,8
+Active Components	BJTs	NPN Trans:B	NPN	p Default NPN BJT pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	QNPN	p pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N2219A	p Si 800mW 40V 800mA 350MHz GenPurp pkg:TO-5 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2222A	p Si 500mW 40V 800mA 300MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2369A	p Si 360mW 15V 500mA 600MHz Switching pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2484	p Si 360mW 60V 50mA 100MHz pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3019	p Si 800mW 80V 1A 190MHz pkg:TO-5 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3053	p Si 5W 40V 700mA 185MHz pkg:TO-5 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3055	p Si 115W 70V 15A 20kHz pkg:TO-3 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3501	p Si 1W 150V 300mA 283MHz pkg:TO-5 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3507	p Si 1W 50V 3A 60MHz pkg:TO-5 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3700	p Si 500mW 80V 1A 190MHz pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3904	p Si 625mW 40V 200mA 300MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N3947	p Si 360mW 40V 200mA 346MHz pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N4401	p Si 625mW 40V 600mA 250MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5551	p Si 625mW 160V 600mA 300MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N6431	p Si 500mW 300V 50mA 300MHz pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N6517	p Si 625mW 350V 500mA 200MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4124	p Si 625mW 25V 200mA 300MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5088	p Si 625mW 30V 100mA 50MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5089	p Si 625mW 25V 100mA 50MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5210	p Si 625mW 50V 100mA 30MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA42	p Si 625mW 300V 200mA 50MHz HiVoltAmp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA43	p Si 625mW 200V 200mA 50MHz HiVoltAmp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA06	p Si 625mW 80V 500mA 219MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA17	p Si 350mW 40V 100mA 125MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA18	p Si 625mW 45V 200mA 450MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA44	p Si 625mW 400V 300mA 200MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N3903	p Si 625mW 40V 200mA 250MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4123	p Si 625mW 30V 200mA 250MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4264	p Si 350mW 15V 200mA 300MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4265	p Si 350mW 12V 200mA 300MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4400	p Si 625mW 40V 600mA 200MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N4410	p Si 625mW 80V 250mA 100MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5209	p Si 625mW 50V 50mA 30MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N5550	p Si 625mW 140V 600mA 200MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N6515	p Si 625mW 250V 500mA 100MHz HiVolt pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N6516	p Si 625mW 300V 500mA 100MHz HiVolt pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA05	p Si 625mW 60V 500mA 150MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	MPSA16	p Si 350mW 40V 100mA 150MHz Chopper pkg:TO-92B 1,2,3
+Active Components	BJTs	NPN Trans:B	2N930	p Si 1.2W 45V 30mA 60MHz Amp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N930A	p Si 1.2W 45V 30mA 90MHz Amp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N1893	p Si 1.2W 80V 500mA 90MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2102	p Si 1W 65V 1A 90MHz Amp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2218A	p Si 800mW 40V 800mA 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2219	p Si 800mW 30V 800mA 300MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2222	p Si 400mW 30V 800mA 300MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2270	p Si 1W 45V 1A 250MHz Amp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2369	p Si 360mW 15V 200mA 500MHz Switch pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2895	p Si 500mW 65V 1A 150MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N2896	p Si 500mW 90V 1A 150MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3020	p Si 800mW 80V 1A 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3053A	p Si 1W 60V 700mA 150MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N3500	p Si 1W 150V 300mA 200MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	NPN Trans:B	2N4014	p Si 500mW 40V 1A 400MHz Switch pkg:TO-18 3,2,1
+Active Components	BJTs	NPN Trans:C	
+Active Components	BJTs	PNP Trans:B	PNP	p Default PNP BJT pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N2905A	p Si 600mW 60V 600mA 300MHz pkg:TO-5 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2907A	p Si 1.8W 60V 600mA 200MHz pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3251A	p Si 360mW 60V 200mA 340MHz pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3467	p Si 1W 40V 1A 200MHz pkg:TO-5 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3468	p Si 1W 50V 1A 180MHz pkg:TO-5 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3799	p Si 360mW 60V 50mA 300MHz pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3905	p Si 310mW 40V 200mA 200MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N3906	p Si 625mW 40V 200mA 250MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N3964	p Si 360mW 45V 200mA 300MHz pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4402	p Si 310mW 40V 600mA 150MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N4403	p Si 625mW 40V 600mA 250MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5087	p Si 625mW 50V 50mA 400MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5401	p Si 625mW 150V 600mA 300MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N6433	p Si 500mW 300V 500mA 300MHz pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N6520	p Si 625mW 350V 500mA 84MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	MPSA56	p Si 625mW 80V 500mA 155MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	MPSA92	p Si 625mW 300V 500mA 95MHz pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N4126	p Si 625mW 25V 200mA 250MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N4258	p Si 350mW 12V 200mA 700MHz Switching pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5086	p Si 625mW 50V 100mA 40MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5087	p Si 625mW 50V 100mA 40MHz GenPurp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5771	p Si 350mW 15V 200mA 700MHz Switching pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N4125	p Si 625mW 30V 200mA 250MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N5400	p Si 625mW 120V 600mA 250MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N6519	p Si 625mW 300V 500mA 120MHz HiVolt pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	MPSA55	p Si 625mW 60V 500mA 150MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	MPSA70	p Si 625mW 40V 100mA 100MHz Amp pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	MPSA93	p Si 625mW 200V 500mA 80MHz HiVolt pkg:TO-92B 1,2,3
+Active Components	BJTs	PNP Trans:B	2N2904	p Si 600mW 40V 600mA 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2904A	p Si 600mW 60V 600mA 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2905	p Si 600mW 40V 600mA 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2906	p Si 400mW 40V 600mA 250MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2906A	p Si 400mW 60V 600mA 250MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N2907	p Si 400mW 40V 600mA 250MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3244	p Si 1W 40V 1A 200MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3250	p Si 360mW 40V 200mA 300MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3251	p Si 360mW 40V 200mA 350MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3497	p Si 400mW 120V 100mA 200MHz GenPurp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3546	p Si 360mW 12V 200mA 800MHz Switch pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3634	p Si 1W 140V 1A 200MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3635	p Si 1W 140V 1A 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3636	p Si 1W 175V 1A 200MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3637	p Si 1W 175V 1A 250MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N3963	p Si 360mW 80V 200mA 257MHz Amp pkg:TO-18 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4032	p Si 800mW 60V 1A 115MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4033	p Si 800mW 80V 1A 115MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4036	p Si 1W 65V 1A 115MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4037	p Si 1W 40V 1A 115MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4405	p Si 1.25W 80V 1A 350MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4407	p Si 1.25W 80V 2A 450MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:B	2N4931	p Si 1W 250V 50mA 110MHz GenPurp pkg:TO-39 3,2,1
+Active Components	BJTs	PNP Trans:C	
+Active Components	IGBTs	N-IGBT	IRGBC20S	x600V 19A 16.8ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC30S	x600V 34A 22.4ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC40S	x600V 50A 27.2ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC20F	x600V 16A 15.4ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC30F	x600V 31A 21.4ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC40F	x600V 49A 26.9ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBF20F	x900V  9A 11.5ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBF30F	x900V 20A 17.2ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBH50F	x1200V 50A 27.2ns pkg:TO-247 2,1,3
+Active Components	IGBTs	N-IGBT	IRGB420U	x500V 14A 14.4ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGB430U	x500V 25A 19.2ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGB440U	x500V 40A 24.3ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC20U	x600V 13A 13.8ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC30U	x600V 23A 18.4ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT	IRGBC40U	x600V  40A  24.3ns pkg:TO-220 2,1,3
+Active Components	IGBTs	N-IGBT:A	
+Active Components	IGBTs	N-IGBT:B	
+Active Components	IGBTs	N-IGBT:C	
+Active Components	IGBTs	P-IGBT	PIGBT	x MCE 600V 40A 24.3ns pkg:TO-220
+Active Components	IGBTs	P-IGBT:A	
+Active Components	IGBTs	P-IGBT:B	
+Active Components	IGBTs	P-IGBT:C	
+Active Components	JFETs	N-JFET	NJFET	p Default N-Ch J-FET parameters pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N4393	p40V 30mA Depl pkg:TO-18 2,3,1
+Active Components	JFETs	N-JFET	2N5457	p25V  25mA  250 ohm Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5459	p25V  25mA  250 ohm Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5484	p25V  30mA  175 ohm Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5486	p25V  30mA  28.8ohm  Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5640	p30V  20mA  35.3ohm  Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5668	p25V  20mA  35.3ohm  Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5669	p25V  20mA  35.3ohm  Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N5670	p25V  20mA  35.3ohm  Depl pkg:TO-92B 3,1,2
+Active Components	JFETs	N-JFET	2N4416	p30V 150mA Depl pkg:TO-92B 1,2,3
+Active Components	JFETs	N-JFET	BF244A	p30V 50mA Depl pkg:TO-92B 1,2,3
+Active Components	JFETs	N-JFET	BF244B	p30V 50mA Depl pkg:TO-92B 1,2,3
+Active Components	JFETs	N-JFET	BF244C	p30V 50mA Depl pkg:TO-92B 1,2,3
+Active Components	JFETs	N-JFET:A	
+Active Components	JFETs	P-JFET	PJFET	p Default P-Ch J-FET pkg:TO-92 2,1,3
+Active Components	JFETs	P-JFET	2N5460	p Motorola Dep-Mode 20V 20mA 35.3ohm pkg:TO-92 2,1,3
+Active Components	JFETs	P-JFET:A	
+Active Components	MESFETs	N-MESFET:A	NMESFET	*Default N-Channel MESFET parameter values
+Active Components	MESFETs	N-MESFET	
+Active Components	MESFETs	P-MESFET:A	PMESFET	*Default P-Channel MESFET parameter values
+Active Components	MESFETs	P-MESFET	
+Active Components	MOSFETs Depl	N-DMOS 3T	2N3796	*MCE 25V  20mA 150 ohm
+Active Components	MOSFETs Depl	N-DMOS 3T	2N3797	*MCE 25V  20mA 150 ohm
+Active Components	MOSFETs Depl	N-DMOS 3T:A	
+Active Components	MOSFETs Depl	N-DMOS 4T	NMOS	*Default N-Channel MOSFET parameter values
+Active Components	MOSFETs Depl	N-DMOS 4T:A	
+Active Components	MOSFETs Depl	P-DMOS 3T	PMOS	*Default P-Channel MOSFET parameter values
+Active Components	MOSFETs Depl	P-DMOS 3T:A	
+Active Components	MOSFETs Depl	P-DMOS 4T	
+Active Components	MOSFETs Depl	P-DMOS 4T:A	
+Active Components	MOSFETs Enh	N-EMOS 3T	NMOS	p Default N-Channel MOSFET
+Active Components	MOSFETs Enh	N-EMOS 3T	2N3796	p25V  20mA 150 ohm
+Active Components	MOSFETs Enh	N-EMOS 3T	2N3797	p25V  20mA 150 ohm
+Active Components	MOSFETs Enh	N-EMOS 3T	2N4351	p25V  30mA 100 ohm
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI1010G	x55V 43A .0279ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI510G	x100V 4A .267ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI520G	x100V 7A .167ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI530G	x100V 10A .124ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI540G	x100V 17A .0706ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI1310G	x100V 21A .0571ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI620G	x200V 4A .293ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI630G	x200V 6A .203ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI640G	x200V 10A .122ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI614G	x250V 2A .571ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI624G	x250V 3A .353ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI634G	x250V 6A .214ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI644G	x250V 8A .152ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI720G	x400V 3A .462ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI730G	x400V 4A .324ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI740G	x400V 5A .222ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI734G	x450V 3A .353ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI744G	x450V 5A .245ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI820G	x500V 2A .571ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI830G	x500V 3A .387ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	IRFI840G	x500V 5A .261ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	N-EMOS 3T	Si3454DV	x Tem 30V 4.2A TrenchFET pkg:TSOP-6
+Active Components	MOSFETs Enh	N-EMOS 3T:A	
+Active Components	MOSFETs Enh	N-EMOS 4T	
+Active Components	MOSFETs Enh	N-EMOS 4T:A	
+Active Components	MOSFETs Enh	P-EMOS 3T	PMOS	p Default P-Channel MOSFET
+Active Components	MOSFETs Enh	P-EMOS 3T	IRF9510	x100V 4A 1.2 ohms HEXFET pkg:TO-220 2,1,3
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9Z14G	x60V 5A .226ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9Z24G	x60V 8A .141ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9Z34G	x60V 12A .1ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9520G	x100V 5A .231ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9530G	x100V 8A .156ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9540G	x100V 11A .109ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9620G	x200V 3A .4ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9630G	x200V 4A .279ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T	IRFI9640G	x200V 6A .197ohm Power MOSFET pkg:TO-220 2,3,1
+Active Components	MOSFETs Enh	P-EMOS 3T:A	
+Active Components	MOSFETs Enh	P-EMOS 4T	
+Active Components	MOSFETs Enh	P-EMOS 4T:A	
+Active Components	SCRs	SCR	SCR	x Default SCR pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N4171	x300V 8A pkg:TO-220 2,3,1
+Active Components	SCRs	SCR	2N5060	x30V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N5061	x60V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N5062	x100V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N5064	x200V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N6237	x50V 3A pkg:TO-126 2,3,1
+Active Components	SCRs	SCR	2N6238	x100V 3A pkg:TO-126 2,3,1
+Active Components	SCRs	SCR	2N6239	x200V 3A pkg:TO-126 2,3,1
+Active Components	SCRs	SCR	2N6240	x400V 3A pkg:TO-126 2,3,1
+Active Components	SCRs	SCR	2N6241	x600V 3A pkg:TO-126 2,3,1
+Active Components	SCRs	SCR	2N5063	x150V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N6564	x300V 1A pkg:TO-92B 1,2,3
+Active Components	SCRs	SCR	2N6565	x400V 1A pkg:TO-92B 1,2,3
+Active Components	Triacs	Triac:A	MAC15A6	x400V 15A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:A	MAC15A8	x600V 15A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:A	MAC210-4	x200V 10A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:A	MAC210-6	x400V 10A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:A	MAC210-8	x600V 10A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:A	MAC210-10	x800V 10A pkg:TO-220 2,3,1
+Active Components	Triacs	Triac:B	
+Active Components	Unijunction	N-UJT	UJT	*Default N-Channel Unijunction Transistor
+Active Components	Unijunction	N-UJT	2N2646	*Motorola IP=.5U IV=6M VB1(sat)=3 Rbb=6.1K Vob1=3.6: E, B1, B2
+Active Components	Unijunction	PUT	PUT	*Default Programable Unijunction Transistor pkg: TO-92
+Active Components	Unijunction	PUT	2N6027	*Programable Unijunction Transistor pkg: TO-226AA
+Linear ICs	Buffers/Amps	AMP0x	AMP02	x AD High Accuracy Instrumentation Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	AMP0x	AMP04	x AD High Accuracy Instrumentation Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	AMP0x	AMP04E	x AD High Accuracy Instrumentation Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	AMP0x	AMP04F	x AD High Accuracy Instrumentation Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	AMP01	AMP01	x AD Low Noise, Precision Instrumentation Amp pkg:DIP18 1,2,3,7,8,9,10,11,12,13,14,15,18
+Linear ICs	Buffers/Amps	AD8036	AD8036an	x AD Low distortion, wide bandwidth clamp amps pkg:DIP8 3,2,8,5,7,4,6
+Linear ICs	Buffers/Amps	AD2205x	AD22050N	x AD Single-supply Sensor Interface Amp pkg:DIP8 8,1,6,2,3,4,7,5
+Linear ICs	Buffers/Amps	AD2205x	AD22050T	x AD Single-supply Sensor Interface Amp pkg:DIP8 8,1,6,2,3,4,7,5
+Linear ICs	Buffers/Amps	AD2205x	AD22057N	x AD Single-supply Sensor Interface Amp pkg:DIP8 8,1,6,2,3,4,7,5
+Linear ICs	Buffers/Amps	AD2205x	AD22057T	x AD Single-supply Sensor Interface Amp pkg:DIP8 8,1,6,2,3,4,7,5
+Linear ICs	Buffers/Amps	AD830	AD830	x AD High Speed, Video Difference Amp pkg:DIP8 1,2,3,4,5,7,8
+Linear ICs	Buffers/Amps	AD830	AD830A	x AD High Speed, Video Difference Amp pkg:DIP8 1,2,3,4,5,7,8
+Linear ICs	Buffers/Amps	AD830	AD830J	x AD High Speed, Video Difference Amp pkg:DIP8 1,2,3,4,5,7,8
+Linear ICs	Buffers/Amps	AD830	AD830S	x AD High Speed, Video Difference Amp pkg:DIP8 1,2,3,4,5,7,8
+Linear ICs	Buffers/Amps	AD816	AD816an	x AD Dual 500mA Differentail Drive and Low noise amplifier pkg:VR-15 (A:3,2,1,4,5,6,8,7)(B:12,13,14,11,10,9,8,7)
+Linear ICs	Buffers/Amps	AD626	AD626	x AD Low Cost, Single Supply, Differential Amp pkg:DIP8 8,1,6,3,7,4,2,5
+Linear ICs	Buffers/Amps	AD626	AD626B	x AD Low Cost, Single Supply, Differential Amp pkg:DIP8 8,1,6,3,7,4,2,5
+Linear ICs	Buffers/Amps	AD624	AD624	x AD Precision Instrumentation Amp pkg:DIP16 16,1,2,7,6,9,8,3,10,13,12,11
+Linear ICs	Buffers/Amps	AD624	AD624A	x AD Precision Instrumentation Amp pkg:DIP16 16,1,2,7,6,9,8,3,10,13,12,11
+Linear ICs	Buffers/Amps	AD624	AD624B	x AD Precision Instrumentation Amp pkg:DIP16 16,1,2,7,6,9,8,3,10,13,12,11
+Linear ICs	Buffers/Amps	AD624	AD624C	x AD Precision Instrumentation Amp pkg:DIP16 16,1,2,7,6,9,8,3,10,13,12,11
+Linear ICs	Buffers/Amps	AD624	AD624S	x AD Precision Instrumentation Amp pkg:DIP16 16,1,2,7,6,9,8,3,10,13,12,11
+Linear ICs	Buffers/Amps	AD620	AD620	x AD Low Cost, Low Power, Instrumentation Amp pkg:DIP8 3,2,7,4,6,5,1,8
+Linear ICs	Buffers/Amps	AD620	AD620A	x AD Low Cost, Low Power, Instrumentation Amp pkg:DIP8 3,2,7,4,6,5,1,8
+Linear ICs	Buffers/Amps	AD620	AD620B	x AD Low Cost, Low Power, Instrumentation Amp pkg:DIP8 3,2,7,4,6,5,1,8
+Linear ICs	Buffers/Amps	AD620	AD620S	x AD Low Cost, Low Power, Instrumentation Amp pkg:DIP8 3,2,7,4,6,5,1,8
+Linear ICs	Buffers/Amps	Buffer/Amp	CLC109	x COM Sngl LwPwr WideBW ClosedLoop Buffer pkg:DIP8 4,8,1,5
+Linear ICs	Buffers/Amps	Buffer/Amp	CLC111	x COM Sngl WideBW HiSlewRt ClosedLoop Buffer pkg:DIP8 4,8,1,5
+Linear ICs	Buffers/Amps	Buffer/Amp	HA5002	x HAR Sngl WideB HiSlewRt HiIOut Buffer pkg:DIP8 4,8,1,5
+Linear ICs	Buffers/Amps	Buffer/Amp	HA5033	x HAR Sngl Video Buffer pkg:DIP8 4,8,1,5
+Linear ICs	Buffers/Amps	Buffer/Amp	LM6121/NS	x NS HiSpeed Buffer pkg:DIP8 2,7,6,8
+Linear ICs	Buffers/Amps	Buffer/Amp	LM6221/NS	x NS HiSpeed Buffer pkg:DIP8 2,7,6,8
+Linear ICs	Buffers/Amps	Buffer/Amp	LM6321/NS	x NS HiSpeed Buffer pkg:DIP8 2,7,6,8
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2001/EL	x EL LoPwr 70MHz Buffer Amp pkg:DIP8 2,7,1,4
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2002/EL	x EL LoPwr 180MHz Buffer Amp pkg:DIP8 2,7,1,4
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2003/EL	x EL LoPwr 100MHz Video LineDriver pkg:DIP8 2,7,1,4
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2008/EL	x EL 55MHz 1A Buffer Amp pkg:TO-220-5 4,5,1,2
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2009/EL	x EL 90MHz 1A Buffer Amp pkg:TO-220-5 4,5,1,2
+Linear ICs	Buffers/Amps	Buffer/Amp	EL2012/EL	x EL pkg:TO-220-5 4,5,1,2
+Linear ICs	Buffers/Amps	CDA-5	LM3900	x Quad SnglSup OpAmp pkg:DIP14 (A:1,6,14,7,5)(B:2,3,14,7,4)(C:13,8,14,7,9)(D:12,11,14,7,10)
+Linear ICs	Buffers/Amps	CFA-Amp8	LT1228	x LTC Sngl 100MHz CFAmp w/DC Gain Control pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	Diff-Amp7	LT1187	x LTC Sngl LoPwr Video Difference Amp pkg:DIP8 1,2,3,4,6,7,8
+Linear ICs	Buffers/Amps	Diff-Amp7	LT1189	x LTC Sngl LoPwr Video Difference Amp pkg:DIP8 1,2,3,4,6,7,8
+Linear ICs	Buffers/Amps	Diff-Amp7	LT1193	x LTC Sngl Video Difference Amp pkg:DIP8 1,2,3,4,6,7,8
+Linear ICs	Buffers/Amps	Diff-Amp8	LT1194	x LTC Sngl Video Difference Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	BUF04	BUF04	x AD Closed-Loop High Speed Buffer pkg:DIP8 3,7,4,6
+Linear ICs	Buffers/Amps	Amp8	LT1101	x LTC Sngl Precision uPwr Instrumentation Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Buffers/Amps	Amp10	CLC522	x CLC Sngl WideBW Variable-Gain Amp pkg:DIP14 1,2,3,4,5,6,7,9,10,12
+Linear ICs	Buffers/Amps	Analog Mux2	CLC532	x CLC Sngl HiSpeed 2:1 Analog Multiplexer pkg:DIP14 2,4,5,6,7,8,10,11,12,13,2,4
+Linear ICs	Comparators	AD8561	AD8561	x AD Ultrafast 7ns Single Supply Comparator pkg:DIP8 2,3,1,4,5,6,7,8
+Linear ICs	Comparators	Comparator5	SWCOMP	x IDEAL Voltage Comparator using Switches pkg:DIP8 3,2,7,4,6
+Linear ICs	Comparators	Comparator5	LM339	x Quad SnglSup pkg:DIP14 (A:5,4,3,12,2)(B:7,6,3,12,1)(C:9,8,3,12,14)(D:11,10,3,12,13)
+Linear ICs	Comparators	Comparator6	LM111	x Sngl Differential Comp pkg:DIP8 2,3,8,4,7,1
+Linear ICs	Comparators	Comparator6	LP111	x Sngl 30V uPwr Differential Comp pkg:DIP8 2,3,8,4,7,1
+Linear ICs	Comparators	Comparator6	LP211	x Sngl 30V uPwr Differential Comp pkg:DIP8 2,3,8,4,7,1
+Linear ICs	Phase-Locked Loops	PLL	PLLX	*SPICE code of PLL macromodel
+Linear ICs	Modulators	MC1496	MC1496	*Motorola/MCE Balanced Modulator/Demod pkg:DIP14 
+Linear ICs	Modulators	MC1496	MC1496	*Motorola/MCE Balanced Modulator/Demod pkg:SO-14
+Linear ICs	Modulators	AD630	AD630	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	Modulators	AD630	AD630A	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	Modulators	AD630	AD630B	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	Modulators	AD630	AD630J	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	Modulators	AD630	AD630K	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	Modulators	AD630	AD630S	x AD Balanced Modulator/Demodulator pkg:DIP20 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Linear ICs	OPAMPs	Op-Amp7:A	NE5534	x Sngl LowNoise OpAmp pkg:DIP8 3,2,7,4,6,5,8
+Linear ICs	OPAMPs	Op-Amp7:A	UA748	x Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LM101A	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LM108	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LH2108	x LTC Dual OpAmp pkg:DIP16 (A:5,4,1,6,16,3,2)(B:13,12,9,6,8,11,10)
+Linear ICs	OPAMPs	Op-Amp7:A	LM108A	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LH2108A	x LTC Dual OpAmp pkg:DIP16 (A:5,4,1,6,16,3,2)(B:13,12,9,6,8,11,10)
+Linear ICs	OPAMPs	Op-Amp7:A	LM10C	x LTC Sngl LoPwr OpAmp & Reference pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LM301A	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LM308	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LM308A	x LTC Sngl OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7:A	LT1008	x LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6,1,8
+Linear ICs	OPAMPs	Op-Amp7	
+Linear ICs	OPAMPs	Op-Amp6:A	
+Linear ICs	OPAMPs	Op-Amp6	
+Linear ICs	OPAMPs	Op-Amp5:A	OPAMP5	x IDEAL Sngl OpAmp OpenLoopGain=100k pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF347	x Quad WideBW JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LF351	x Sngl WideBW JFET OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF353	x Dual WideBW JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LF411C	x Sngl LoOffset LoDrift JFET OpAmp pkg:DIP8 3,2,8,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF412C	x Dual LoOffset LoDrift JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LM307	x Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LM324	x Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LM348	x Quad 741 OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LM358	x Dual LoPwr, HiGain, SnglSup OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LM2902	x Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LM3900	x Quad SnglSup OpAmp pkg:DIP14 (A:1,6,14,7,5)(B:2,3,14,7,4)(C:13,8,14,7,9)(D:12,11,14,7,10)
+Linear ICs	OPAMPs	Op-Amp5:A	MC1458	x Dual 741 OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	MC3403	x Quad LoPwr SnglSup OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	UA741	x Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	UA747	x Dual GenPurpose OpAmp pkg:DIP14 (A:2,1,13,4,12)(B:6,7,9,4,10)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1006	x LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LM318	x LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LM318S8	x LTC Sngl HiSpeed OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF155	x LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF155A	x LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF156	x LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF156A	x LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF355	x LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF355A	x LTC Sngl JFETin LoSupCurrent OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF356	x LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF356A	x LTC Sngl JFETin HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LF412	x LTC Dual JFETin Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LF412A	x LTC Dual JFETin Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LM107	x LTC Sngl GenPurpose OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LM118	x LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1001	x LTC Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1002	x LTC Dual Matched Precision OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1001S8	x LTC Sngl Precision OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1001A	x LTC Sngl Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1002A	x LTC Dual Matched Precision OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1006	x LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1006A	x LTC Sngl SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1006S8	x LTC Sngl SnglSup Precision OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1007	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1007CS	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+Linear ICs	OPAMPs	Op-Amp5:A	LT1007A	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1012	x LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1024	x LTC Dual Matched pA uV LoNoise OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1012A	x LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1024A	x LTC Dual Matched pA uV LoNoise OpAmp pkg:DIP14 (A:4,3,14,12,13)(B:11,10,7,5,6)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1012D	x LTC Sngl pA uV LoNoise OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1012S8	x LTC Sngl pA uV LoNoise OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1013	x LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1014	x LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1013A	x LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1014A	x LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1013D	x LTC Dual SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1014D	x LTC Quad SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1022	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1022A	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1028	x LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1028CS	x LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+Linear ICs	OPAMPs	Op-Amp5:A	LT1028A	x LTC Sngl UltraLoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1037	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1037CS	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:SMD16B 5,4,13,6,12
+Linear ICs	OPAMPs	Op-Amp5:A	LT1037A	x LTC Sngl LoNoise HiSpeed Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1055	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1055A	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1055S8	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1056	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1056A	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1056S8	x LTC Sngl HiSpeed Precision JFET OpAmp pkg:SMD8A 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1057	x LTC Dual HiSpeed Precision JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1058	x LTC Quad HiSpeed Precision JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1057A	x LTC Dual HiSpeed Precision JFET OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1058A	x LTC Quad HiSpeed Precision JFET OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1057S	x LTC Dual HiSpeed Precision JFET OpAmp pkg:SMD16B (A:5,4,14,6,3)(B:11,12,14,6,13)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1078	x LTC Dual uPwr SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1079	x LTC Quad uPwr SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1077	x LTC Sngl uPwr SnglSup Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1078A	x LTC Dual uPwr SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1079A	x LTC Quad uPwr SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1097	x LTC Sngl LoCost LoPwr Precision OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1115	x LTC Sngl UltraLoNoise LoDisto Audio OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1122	x LTC Sngl FastSettling JFET OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1178	x LTC Dual 17uAMax SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1179	x LTC Quad 17uAMax SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1178A	x LTC Dual 17uAMax SnglSup Precision OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1179A	x LTC Quad 17uAMax SnglSup Precision OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT118A	x LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT318A	x LTC Sngl HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1190	x LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1191	x LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1192	x LTC Sngl UltraHiSpeed SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1195	x LTC Sngl LoPwr HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1200	x LTC Sngl LoPwr HiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1201	x LTC Dual 1mA 12MHz 50V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1202	x LTC Quad 1mA 12MHz 50V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1208	x LTC Dual 45MHz 400V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1209	x LTC Quad 45MHz 400V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1217	x LTC Sngl LoPwr 10MHz CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1220	x LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1221	x LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1223	x LTC Sngl 100MHz CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1224	x LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1225	x LTC Sngl VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1226	x LTC Sngl LoNoise VeryHiSpeed OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1227	x LTC Sngl 140MHz Video CurrentFB OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1229	x LTC Dual 100MHz CurrentFB Amp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1230	x LTC Quad 100MHz CurrentFB Amp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1252	x LTC Sngl CurrentFB VideoAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1253	x LTC Dual CurrentFB VideoAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1254	x LTC Quad CurrentFB VideoAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1259	x LTC Dual 130MHz CurrentFB Amp w/Shutdown pkg:DIP14 (A:2,1,12,10,13)(B:6,7,12,10,9)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1260	x LTC Trpl 130MHz CurrentFB Amp w/Shutdown pkg:DIP16 (A:2,1,14,11,15)(B:7,8,14,11,10)(C:5,4,14,11,12)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1354	x LTC Sngl 12MHz 400V/us OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1355	x LTC Dual 12MHz 400V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1356	x LTC Quad 12MHz 400V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1357	x LTC Sngl 25MHz 600V/us OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1358	x LTC Dual 25MHz 600V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1359	x LTC Quad 25MHz 600V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1360	x LTC Sngl 50MHz 800V/us OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1361	x LTC Dual 50MHz 800V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1362	x LTC Quad 50MHz 800V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1363	x LTC Sngl 70MHz 1000V/us OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LT1364	x LTC Dual 70MHz 1000V/us OpAmp pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LT1365	x LTC Quad 70MHz 1000V/us OpAmp pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1047	x LTC Dual uPwr ChopStab SnglSup OpAmp w/intCaps pkg:DIP14 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1049	x LTC Sngl LoPwr ChopStab SnglSup OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1050	x LTC Sngl Precision ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1050A	x LTC Sngl Precision ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1051	x LTC Dual Precision ChopStab OpAmp w/intCaps pkg:DIP8 (A:3,2,8,4,1)(B:5,6,8,4,7)
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1052	x LTC Sngl ChopStab OpAmp pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1052CS	x LTC Sngl ChopStab OpAmp pkg:SMD16B 5,4,13,7,12
+Linear ICs	OPAMPs	Op-Amp5:A	LTC7652	x LTC Sngl ChopStab OpAmp pkg:CAN8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1053	x LTC Quad Precision ChopStab OpAmp w/intCaps pkg:DIP14 (A:3,2,4,11,1)(B:5,6,4,11,7)(C:10,9,4,11,8)(D:12,13,4,11,14)
+Linear ICs	OPAMPs	Op-Amp5:A	LTC1150	x LTC Sngl +/-15V ChopStab OpAmp w/intCaps pkg:DIP8 3,2,7,4,6
+Linear ICs	OPAMPs	Op-Amp5	
+Linear ICs	OPAMPs	Op-Amp3	
+Linear ICs	Variable Gain Amps	GainAmp2	AD603	x AD Low noise, 90MHz Variable-Gain Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Variable Gain Amps	GainAmp2	AD603A	x AD Low noise, 90MHz Variable-Gain Amp pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Variable Gain Amps	GainAmp1	AD600	x AD Dual, Low noise, Wideband, Variable gain Amp pkg:DIP14 (A:4,16,1,2,3,15,12,14,13)(B:5,9,8,7,6,10,12,11,13)
+Linear ICs	Variable Gain Amps	GainAmp1	AD600J	x AD Dual, Low noise, Wideband, Variable gain Amp pkg:DIP14 (A:4,16,1,2,3,15,12,14,13)(B:5,9,8,7,6,10,12,11,13)
+Linear ICs	Variable Gain Amps	GainAmp1	AD602	x AD Dual, Low noise, Wideband, Variable gain Amp pkg:DIP14 (A:4,16,1,2,3,15,12,14,13)(B:5,9,8,7,6,10,12,11,13)
+Linear ICs	Variable Gain Amps	GainAmp1	AD602J	x AD Dual, Low noise, Wideband, Variable gain Amp pkg:DIP14 (A:4,16,1,2,3,15,12,14,13)(B:5,9,8,7,6,10,12,11,13)
+Linear ICs	References	REF19x	REF191	x AD 2.048V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF191E	x AD 2.048V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF191F	x AD 2.048V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF191G	x AD 2.048V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF192	x AD 2.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF192E	x AD 2.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF192F	x AD 2.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF192G	x AD 2.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF193	x AD 3.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF193G	x AD 3.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF194	x AD 4.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF194E	x AD 4.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF194F	x AD 4.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF194G	x AD 4.50V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF195	x AD 5.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF195E	x AD 5.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF195F	x AD 5.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF195G	x AD 5.00V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF196	x AD 3.30V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF196G	x AD 3.30V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF198	x AD 4.096V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF198E	x AD 4.096V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF198F	x AD 4.096V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REF19x	REF198G	x AD 4.096V Precision icropower, Low drop, Voltage Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	REFxx	REF01	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF01A	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF01C	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF01E	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF01H	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02A	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02C	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02D	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02E	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF02H	x AD +5V Precision Voltage-Reference/Temperature-Transducer pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF05	x AD +5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF05A	x AD +5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF05B	x AD +5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF10	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF10A	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF10B	x AD +10V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF43	x AD +2.5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF43B	x AD +2.5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF43F	x AD +2.5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	REFxx	REF43G	x AD +2.5V Precision Voltage Reference pkg:DIP8 2,4,5,6
+Linear ICs	References	Reference3	TL431	*Programmable Precision Reference pkg:TO-92 2,3,1. 
+Linear ICs	References	Reference3	TL431	*Programmable Precision Reference pkg:DIP8 6,1,8
+Linear ICs	References	ShuntRef	AD1580	x AD 1.2V Micropower, Precision Shunt Reference pkg:SOT-23 1,2
+Linear ICs	References	AD780	AD780	x AD 2.5V/3.0V High Precision Reference pkg:DIP8 1,3,4,5,6,8
+Linear ICs	References	AD780	AD780A	x AD 2.5V/3.0V High Precision Reference pkg:DIP8 1,3,4,5,6,8
+Linear ICs	References	AD780	AD780B	x AD 2.5V/3.0V High Precision Reference pkg:DIP8 1,3,4,5,6,8
+Linear ICs	References	AD780	AD780S	x AD 2.5V/3.0V High Precision Reference pkg:DIP8 1,3,4,5,6,8
+Linear ICs	References	AD680	AD680	x AD 2.5V Low power, Low cost Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	AD680	AD680A	x AD 2.5V Low power, Low cost Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	AD680	AD680J	x AD 2.5V Low power, Low cost Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	AD680	AD680JT	x AD 2.5V Low power, Low cost Reference pkg:DIP8 2,3,4,6
+Linear ICs	References	AD588	AD588	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588A	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588B	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588J	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588K	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588S	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD588	AD588T	x AD High Precision Voltage Reference pkg:DIP16 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+Linear ICs	References	AD587	AD587	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587J	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587K	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587L	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587S	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587T	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD587	AD587U	x AD 10,000V +/-5mV Precision Reference pkg:DIP8 2,4,5,6,8
+Linear ICs	References	AD584	AD584	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD584	AD584J	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD584	AD584K	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD584	AD584L	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD584	AD584S	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD584	AD584T	x AD Pin programmable Precision Voltage Reference pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	References	AD581	AD581	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581J	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581K	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581L	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581S	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581T	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	References	AD581	AD581U	x AD High precision 10V reference pkg:TO-5 2,3,1
+Linear ICs	Regulators	Regulator3	LM317	x Adjustable Voltage Reg (COM=ADJ) pkg:TO-220 3,1,2
+Linear ICs	Regulators	Regulator3	78L05	x5V 100mA Voltage Regulator pkg:TO-92 3,2,1
+Linear ICs	Regulators	Regulator3	78L08	x8.2V 100mA Voltage Regulator pkg:TO-92 3,2,1
+Linear ICs	Regulators	Regulator3	78L12	x12V 100mA Voltage Regulator pkg:TO-92 3,2,1
+Linear ICs	Regulators	Regulator3	78L15	x15V 100mA Voltage Regulator pkg:TO-92 3,2,1
+Linear ICs	Timers	555/556 Timer	UA555	*Sngl Timer (Component Model) pkg:DIP8 1,2,3,4,5,6,7,8. 
+Linear ICs	Timers	555/556 Timer	UA555	*Sngl Timer (Component Model) pkg:DIP14 1,3,4,6,8,10,12,14. 
+Linear ICs	Timers	555/556 Timer	UA555	*Sngl Timer (Component Model) pkg:CAN8 1,2,3,4,5,6,7,8.
+Linear ICs	Timers	555/556 Timer	UA556	*Dual Timer (Component Model) pkg:DIP14 (A:7,6,5,4,3,2,1,14)(B:7,8,9,10,11,12,13,14)
+Linear ICs	Timers	555/556 Timer	555	*Sngl Timer (Macromodel) pkg:DIP8 1,2,3,4,5,6,7,8. 
+Linear ICs	Timers	555/556 Timer	555	*Sngl Timer (Macromodel) pkg:DIP14 1,3,4,6,8,10,12,14. 
+Linear ICs	Timers	555/556 Timer	555	*Sngl Timer (Macromodel) pkg:CAN8 1,2,3,4,5,6,7,8.
+Linear ICs	Timers	555/556 Timer	556	*Dual Timer (Macromodel) pkg:DIP14 (A:7,6,5,4,3,2,1,14)(B:7,8,9,10,11,12,13,14)
+Linear ICs	Multipliers	MLT04	MLT04	x AD 4-CH, 4-Quadrant Analog Multiplier pkg:DIP18 (A:3,4,2,1,5,14)(B:7,6,8,9,5,14)(C:12,13,11,10,5,14)(D:16,15,17,18,5,14)
+Linear ICs	Multipliers	MLT04	MLT04G	x AD 4-CH, 4-Quadrant Analog Multiplier pkg:DIP18 (A:3,4,2,1,5,14)(B:7,6,8,9,5,14)(C:12,13,11,10,5,14)(D:16,15,17,18,5,14)
+Linear ICs	Multipliers	AD734	AD734	x AD 10MHz, 4-Quadrant Multiplier/Divider pkg:DIP14 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Linear ICs	Multipliers	AD734	AD734A	x AD 10MHz, 4-Quadrant Multiplier/Divider pkg:DIP14 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Linear ICs	Multipliers	AD734	AD734B	x AD 10MHz, 4-Quadrant Multiplier/Divider pkg:DIP14 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Linear ICs	Multipliers	AD734	AD734S	x AD 10MHz, 4-Quadrant Multiplier/Divider pkg:DIP14 1,2,3,4,5,6,7,8,9,10,11,12,13,14
+Linear ICs	Multipliers	AD633	AD633	x AD Low cost Analog Multiplier pkg:DIP8 1,2,3,4,5,6,7,8
+Linear ICs	Multipliers	AD633	AD633J	x AD Low cost Analog Multiplier pkg:DIP8 1,2,3,4,5,6,7,8
+Schematic Symbols	Misc	Caution	
+Schematic Symbols	Diodes	Shockley	
+Schematic Symbols	Diodes	Tunnel	
+Schematic Symbols	Diacs	Diac:D	
+Schematic Symbols	Diacs	Diac:C	
+Schematic Symbols	Diacs	Diac:A	
+Schematic Symbols	Diacs	Diac:B	
+Schematic Symbols	Cables	Coax	
+Schematic Symbols	Cables	TwinLead	
+Schematic Symbols	Cables	TwistedPair	
+Schematic Symbols	Antennas	Antenna	
+Transformers	XSpice	xfmr	XFMR	*Generic type:xfmr
+Transformers	XSpice	xfmr	DEFAULT	p Default alias:XXFMR {PRIT=10 SECT=100 FRAC=TRUE}
+Transformers	XSpice	lcouple	1TURN	*1 turn - type:lcouple
+Transformers	XSpice	lcouple	5TURN	*5 turn - type:lcouple
+Transformers	XSpice	lcouple	10TURN	*10 turn - type:lcouple
+Transformers	XSpice	lcouple	20TURN	*20 turn - type:lcouple
+Transformers	XSpice	lcouple	50TURN	*50 turn - type:lcouple
+Transformers	XSpice	lcouple	100TURN	*100 turn - type:lcouple
+Transformers	XSpice	lcouple	155TURN	*155 turns - type:lcouple
+Transformers	XSpice	lcouple	310TURN	*310 turns - type:lcouple
+Transformers	XSpice	core	CORE	*Default - type:core
+Transformers	XSpice	core	EXAMPLE	*Default - type:core
+Transformers	Coupled Inductors	CTTransformer	
+Transformers	Coupled Inductors	Transformer	
+Transformers	Subcircuit	Trans1	TRANS	*Generic type:transformer
+Transformers	Subcircuit	Trans1	1TO10	p alias:XTRANS {RATIO=10}
+Transformers	Subcircuit	Trans1	1TO5	p alias:XTRANS {RATIO=5}
+Transformers	Subcircuit	Trans1	1TO2	p alias:XTRANS {RATIO=2}
+Transformers	Subcircuit	Trans1	1TO1	p alias:XTRANS {RATIO=1}
+Transformers	Subcircuit	Trans1	5TO1	p alias:XTRANS {RATIO=0.2}
+Transformers	Subcircuit	Trans1	10TO1	p alias:XTRANS {RATIO=0.1}
+Transformers	Subcircuit	Trans2	
+Transformers	Subcircuit	Trans3	TRANSCT	*Generic ct secondary type:transformer
+Transformers	Subcircuit	Trans3	1TO1CT	p alias:XTRANSCT {RATIO=1}
+Transformers	Subcircuit	Trans3	2TO1CT	p alias:XTRANSCT {RATIO=.5}
+Transformers	Subcircuit	Trans3	5TO1CT	p alias:XTRANSCT {RATIO=.2}
+Transformers	Subcircuit	Trans3	10TO1CT	p alias:XTRANSCT {RATIO=.1}
+Transmission Lines	SPICE Simulation	LossLessLine	
+Transmission Lines	SPICE Simulation	LossyLine	LTRA	*Default lossy transmission line
+Transmission Lines	SPICE Simulation	URC-Line	URC	*Default uniform distributed RC line (lossy)
+Connectors	Misc	Stereo Jack	
+Connectors	Misc	Phone Plug	
+Connectors	Misc	Phone Jack	
+Connectors	Misc	Mono Jack	
+Connectors	Misc	Connector	
+Connectors	Misc	AC Plug	
+Connectors	Misc	AC Outlet	
+Connectors	Misc	13W3	
+Connectors	IDC Type	IDC50	
+Connectors	IDC Type	IDC40	
+Connectors	IDC Type	IDC36	
+Connectors	IDC Type	IDC34	
+Connectors	IDC Type	IDC26	
+Connectors	IDC Type	IDC20	
+Connectors	IDC Type	IDC16	
+Connectors	IDC Type	IDC10	
+Connectors	SIP Type	SIP2	
+Connectors	SIP Type	SIP3	
+Connectors	SIP Type	SIP4	
+Connectors	SIP Type	SIP5	
+Connectors	SIP Type	SIP6	
+Connectors	SIP Type	SIP7	
+Connectors	SIP Type	SIP8	
+Connectors	SIP Type	SIP9	
+Connectors	SIP Type	SIP10	
+Connectors	SIP Type	SIP12	
+Connectors	SIP Type	SIP16	
+Connectors	SIP Type	SIP20	
+Connectors	DB Type	DB-9	
+Connectors	DB Type	DB-15	
+Connectors	DB Type	DB-15HD	
+Connectors	DB Type	DB-25	
+Connectors	Active	Terminal:F	
+Connectors	Active	Terminal:E	
+Connectors	Active	Terminal:D	
+Connectors	Active	Terminal:C	
+Connectors	Active	Terminal:B	
+Connectors	Active	Terminal:A	
+Connectors	Active	Terminal	
+Connectors	Active	Output	
+Connectors	Active	Input	
+Fuses	Thermal	Fuse:Thermal	FUSE	*Generic type:fuse pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	1mA	p Fuse alias:XFUSE {CURRENT=1m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	10mA	p Fuse alias:XFUSE {CURRENT=10m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	25mA	p Fuse alias:XFUSE {CURRENT=25m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	50mA	p Fuse alias:XFUSE {CURRENT=50m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	100mA	p Fuse alias:XFUSE {CURRENT=100m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	250mA	p Fuse alias:XFUSE {CURRENT=250m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	500mA	p Fuse alias:XFUSE {CURRENT=500m} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	1A	p Fuse alias:XFUSE {CURRENT=1} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	2.5A	p Fuse alias:XFUSE {CURRENT=2.5} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	5A	p Fuse alias:XFUSE {CURRENT=5} pkg:FUSE
+Fuses	Thermal	Fuse:Thermal	10A	p Fuse alias:XFUSE {CURRENT=10} pkg:FUSE
+Fuses	Electronic	Fuse:A	
+Fuses	Electronic	Fuse	
+Crystals	Standard	Crystal	CRYSTAL	*Generic type:crystal pkg:HC33/51
+Crystals	Standard	Crystal	1.000MHZ	p CTS alias:XCRYSTAL {FREQ=1E6 RS=540} pkg:HC33/51
+Crystals	Standard	Crystal	1.8432MHZ	p CTS alias:XCRYSTAL {FREQ=1.843E6 RS=540} pkg:HC33/51
+Crystals	Standard	Crystal	2.000MHZ	p CTS alias:XCRYSTAL {FREQ=2E6 RS=250 C=2E-11} pkg:HC33/51
+Crystals	Standard	Crystal	2.4576MHZ	p CTS alias:XCRYSTAL {FREQ=2.458E6 RS=250 C=3.2E-11} pkg:HC33/51
+Crystals	Standard	Crystal	3.000MHZ	p CTS alias:XCRYSTAL {FREQ=3E6 RS=100 C=1.8E-11} pkg:HC33/51
+Crystals	Standard	Crystal	3.2768MHZ	p CTS alias:XCRYSTAL {FREQ=3.276E6 RS=100 C=1.5E-11} pkg:HC33/51
+Crystals	Standard	Crystal	3.5795MHZ	p CTS Color Burst alias:XCRYSTAL {FREQ=3.58E6 RS=160 C=1.8E-11} pkg:HC49
+Crystals	Standard	Crystal	3.6864MHZ	p CTS alias:XCRYSTAL {FREQ=3.686E6 RS=150 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	4.000MHZ	p CTS alias:XCRYSTAL {FREQ=4E6 RS=75 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	5.000MHZ	p CTS alias:XCRYSTAL {FREQ=5E6 RS=50 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	6.000MHZ	p CTS alias:XCRYSTAL {FREQ=6E6 RS=75 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	6.144MHZ	p CTS alias:XCRYSTAL {FREQ=6.144E6 RS=75 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	8.000MHZ	p CTS alias:XCRYSTAL {FREQ=8E6 RS=45 C=2E-11} pkg:HC49
+Crystals	Standard	Crystal	10.000MHZ	p CTS alias:XCRYSTAL {FREQ=1E7 RS=35 C=3E-11} pkg:HC49
+Crystals	Standard	Crystal	11.000MHZ	p CTS alias:XCRYSTAL {FREQ=1.1E7 RS=35 C=1.8E-11} pkg:HC49
+Crystals	Standard	Crystal	12.000MHZ	p CTS alias:XCRYSTAL {FREQ=1E7 RS=35 C=3.2E-11} pkg:HC49
+Crystals	Standard	Crystal	15.000MHZ	p CTS alias:XCRYSTAL {FREQ=1.5E7 RS=35 C=3E-11} pkg:HC49
+Crystals	Standard	Crystal	16.000MHZ	p CTS alias:XCRYSTAL {FREQ=1.6E7 RS=35 C=3E-11} pkg:HC49
+Crystals	Standard	Crystal	20.000MHZ	p CTS alias:XCRYSTAL {FREQ=2E7 RS=35 C=3E-11} pkg:HC49
+Crystals	Standard	Crystal	24.000MHZ	p CTS alias:XCRYSTAL {FREQ=2.4E7 RS=35 C=3E-11} pkg:HC49
+Function Blocks	Misc.	slewrate:A	SLEWRATE	*Default - type:slewrate
+Function Blocks	Misc.	slewrate:A	EXAMPLE	*Default - type:slewrate
+Function Blocks	Misc.	slewrate	
+Function Blocks	Misc.	PWLCS:A	PWL	*Default - type:pwlcs
+Function Blocks	Misc.	PWLCS	
+Function Blocks	Misc.	one shot:A	ONESHOT	*Default - type:oneshot
+Function Blocks	Misc.	one shot	
+Function Blocks	Misc.	lmeter:A	LMETER	*Default - type:lmeter
+Function Blocks	Misc.	lmeter	
+Function Blocks	Misc.	hysteresis:A	HYSTERESIS	*Default - type:hysteresis
+Function Blocks	Misc.	hysteresis	
+Function Blocks	Misc.	gain:A	GAIN	*Default - type:gain
+Function Blocks	Misc.	gain:A	EXAMPLE	*5X - type:gain
+Function Blocks	Misc.	gain	
+Function Blocks	Misc.	cmeter:A	CMETER	*Default - type:cmeter
+Function Blocks	Misc.	cmeter	
+Function Blocks	Math	sxfer:A	SXFER	*Default Chebyshev lowpass filter with 3kHz corner frequency - type:sxfer
+Function Blocks	Math	sxfer	
+Function Blocks	Math	summer:A	SUM	*Default - type:summer
+Function Blocks	Math	summer	
+Function Blocks	Math	multiplier:A	MULT	*Default - type:multiplier
+Function Blocks	Math	multiplier	
+Function Blocks	Math	integrator:A	INT	*Default - type:integrator
+Function Blocks	Math	integrator	
+Function Blocks	Math	divider:A	DIVIDE	*Default - type:divider
+Function Blocks	Math	divider	
+Function Blocks	Math	ddt:A	DDT	*Default - type:ddt
+Function Blocks	Math	ddt	
+Function Blocks	Limiters	limiter:A	LIMITER	*Default - type:limiter
+Function Blocks	Limiters	limiter	
+Function Blocks	Limiters	ilimiter:A	ILIMIT	*Default - type:ilimiter
+Function Blocks	Limiters	ilimiter	
+Function Blocks	Limiters	climiter:A	CLIMIT	*Default - type:climiter
+Function Blocks	Limiters	climiter	
+Math Functions	Current	I-Math1	ABSI	x Absolute value of Current -- pkg:ABS(I)
+Math Functions	Current	I-Math1	ACOSI	x Arc cosine of Current -- pkg:ACOS(I)
+Math Functions	Current	I-Math1	ACOSHI	x Hyperbolic arc cosine of Current -- pkg:ACOSH(I)
+Math Functions	Current	I-Math1	ASINI	x Arc sine of Current -- pkg:ASIN(I)
+Math Functions	Current	I-Math1	ASINHI	x Hyperbolic arc sine of Current -- pkg:ASINH(I)
+Math Functions	Current	I-Math1	ATANI	x Arc tangent of Current -- pkg:ATAN(I)
+Math Functions	Current	I-Math1	ATANHI	x Hyperbolic arc tangent of Current -- pkg:ATANH(I)
+Math Functions	Current	I-Math1	COSI	x Cosine of Current -- pkg:COS(I)
+Math Functions	Current	I-Math1	COSHI	x Hyperbolic cosine of Current -- pkg:COSH(I)
+Math Functions	Current	I-Math1	EXPI	x Exponential of Current -- pkg:EXP(I)
+Math Functions	Current	I-Math1	LNI	x Natural logarithm of Current -- pkg:LN(I)
+Math Functions	Current	I-Math1	LOGI	x Logarithm of Current -- pkg:LOG(I)
+Math Functions	Current	I-Math1	SINI	x Sine of Current -- pkg:SIN(I)
+Math Functions	Current	I-Math1	SINHI	x Hyperbolic sine of Current -- pkg:SINH(I)
+Math Functions	Current	I-Math1	SQRTI	x Square root of Current -- pkg:SQRT(I)
+Math Functions	Current	I-Math1	TANI	x Tangent of Current -- pkg:TAN(I)
+Math Functions	Current	I-Math1	UNARYI	x Unary - of Current -- pkg:-(I)
+Math Functions	Current	I-Math2	ADDI	x Add Currents -- pkg:I(A+B)
+Math Functions	Current	I-Math2	SUBI	x Subtract Currents -- pkg:I(A-B)
+Math Functions	Current	I-Math2	MULTI	x Multiply Currents -- pkg:I(A*B)
+Math Functions	Current	I-Math2	DIVI	x Divide Currents -- pkg:I(A/B)
+Math Functions	Voltage	V-Math1	ABSV	x Absolute value of Voltage -- pkg:ABS(V)
+Math Functions	Voltage	V-Math1	ACOSV	x Arc cosine of Voltage -- pkg:ACOS(V)
+Math Functions	Voltage	V-Math1	ACOSHV	x Hyperbolic arc cosine of Voltage -- pkg:ACOSH(V)
+Math Functions	Voltage	V-Math1	ASINV	x Arc sine of Voltage -- pkg:ASIN(V)
+Math Functions	Voltage	V-Math1	ASINHV	x Hyperbolic arc sine of Voltage -- pkg:ASINH(V)
+Math Functions	Voltage	V-Math1	ATANV	x Arc tangent of Voltage -- pkg:ATAN(V)
+Math Functions	Voltage	V-Math1	ATANHV	x Hyperbolic arc tangent of Voltage -- pkg:ATANH(V)
+Math Functions	Voltage	V-Math1	COSV	x Cosine of Voltage -- pkg:COS(V)
+Math Functions	Voltage	V-Math1	COSHV	x Hyperbolic cosine of Voltage -- pkg:COSH(V)
+Math Functions	Voltage	V-Math1	EXPV	x Exponential of Voltage -- pkg:EXP(V)
+Math Functions	Voltage	V-Math1	LNV	x Natural logarithm of Voltage -- pkg:LN(V)
+Math Functions	Voltage	V-Math1	LOGV	x Logarithm of Voltage -- pkg:LOG(V)
+Math Functions	Voltage	V-Math1	SINV	x Sine of Voltage -- pkg:SIN(V)
+Math Functions	Voltage	V-Math1	SINHV	x Hyperbolic sine of Voltage -- pkg:SINH(V)
+Math Functions	Voltage	V-Math1	SQRTV	x Square root of Voltage -- pkg:SQRT(V)
+Math Functions	Voltage	V-Math1	TANV	x Tangent of Voltage -- pkg:TAN(V)
+Math Functions	Voltage	V-Math1	UNARYV	x Unary Minus of Voltage -- pkg:-(V)
+Math Functions	Voltage	V-Math1 Ref	ABSVR	x Absolute value of Voltage -- pkg:ABS(V)
+Math Functions	Voltage	V-Math1 Ref	ACOSVR	x Arc cosine of Voltage -- pkg:ACOS(V)
+Math Functions	Voltage	V-Math1 Ref	ACOSHVR	x Hyperbolic arc cosine of Voltage -- pkg:ACOSH(V)
+Math Functions	Voltage	V-Math1 Ref	ASINVR	x Arc sine of Voltage -- pkg:ASIN(V)
+Math Functions	Voltage	V-Math1 Ref	ASINHVR	x Hyperbolic arc sine of Voltage -- pkg:ASINH(V)
+Math Functions	Voltage	V-Math1 Ref	ATANVR	x Arc tangent of Voltage -- pkg:ATAN(V)
+Math Functions	Voltage	V-Math1 Ref	ATANHVR	x Hyperbolic arc tangent of Voltage -- pkg:ATANH(V)
+Math Functions	Voltage	V-Math1 Ref	COSVR	x Cosine of Voltage -- pkg:COS(V)
+Math Functions	Voltage	V-Math1 Ref	COSHVR	x Hyperbolic cosine of Voltage -- pkg:COSH(V)
+Math Functions	Voltage	V-Math1 Ref	EXPVR	x Exponential of Voltage -- pkg:EXP(V)
+Math Functions	Voltage	V-Math1 Ref	LNVR	x Natural logarithm of Voltage -- pkg:LN(V)
+Math Functions	Voltage	V-Math1 Ref	LOGVR	x Logarithm of Voltage -- pkg:LOG(V)
+Math Functions	Voltage	V-Math1 Ref	SINVR	x Sine of Voltage -- pkg:SIN(V)
+Math Functions	Voltage	V-Math1 Ref	SINHVR	x Hyperbolic sine of Voltage -- pkg:SINH(V)
+Math Functions	Voltage	V-Math1 Ref	SQRTVR	x Square root of Voltage -- pkg:SQRT(V)
+Math Functions	Voltage	V-Math1 Ref	TANVR	x Tangent of Voltage -- pkg:TAN(V)
+Math Functions	Voltage	V-Math1 Ref	UNARYVR	x Unary - of Voltage -- pkg:-(V)
+Math Functions	Voltage	V-Math2	ADDV	x Add Voltages -- pkg:V(A+B)
+Math Functions	Voltage	V-Math2	SUBV	x Subrtact Voltages -- pkg:V(A-B)
+Math Functions	Voltage	V-Math2	MULTV	x Multiply Voltages -- pkg:V(A*B)
+Math Functions	Voltage	V-Math2	DIVV	x Divide Voltages -- pkg:V(A/B)
+Math Functions	Voltage	V-Math2 Ref	ADDVR	x Add Voltages -- pkg:V(A+B)
+Math Functions	Voltage	V-Math2 Ref	SUBVR	x Subrtact Voltages -- pkg:V(A-B)
+Math Functions	Voltage	V-Math2 Ref	MULTVR	x Multiply Voltages -- pkg:V(A*B)
+Math Functions	Voltage	V-Math2 Ref	DIVVR	x Divide Voltages -- pkg:V(A/B)
+ 	 	Quad D Flop~	QDFF	*Generic Quad D - type:digital pkg:DIP16 [DVCC=16;DGND=8;](4,5,12,13,2,7,10,15,9)
+ 	 	1K RAM	RAM1K	*LS generic RAM 1kx8-bit - type:digital pkg:DIP22 [DVCC=22;DGND=11](1,2,3,4,5,6,7,9,10,12,13,14,15,16,17,18,19,20,21)
+ 	 	PROM32	PROM32	*LS generic PROM 32x8-bit - type:digital pkg:DIP16 [DVCC=16;DGND=8;](1,2,3,4,5,6,7,9,10,11,12,13,14,15)
+ 	 	D Flip-Flop~	DFF	*Generic D Flip-Flop - type:digital pkg:DIP14 [DVCC=6;DGND=5;](1,2,3,4)
+ 	 	SR Flip-Flop~	SRFF	*Generic SR Flip-Flip  - type:digital pkg:DIP6 [DVCC=6;DGND=5;](1 2 3 4)
