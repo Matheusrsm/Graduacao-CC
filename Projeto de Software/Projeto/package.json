@@ -20,10 +20,10 @@
         "postinstall": "bower install"
     },
     "dependencies": {
-        "bower": "^1.8.8"
+        "bower": "^1.7.9"
     },
     "devDependencies": {
-        "bower": "^1.8.8",
+        "bower": "^1.7.9",
         "coveralls": "^2.11.9",
         "grunt": "^1.0.1",
         "grunt-contrib-concat": "^1.0.1",

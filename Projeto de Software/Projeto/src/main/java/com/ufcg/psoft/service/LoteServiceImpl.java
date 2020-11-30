@@ -1,72 +1,62 @@
 package com.ufcg.psoft.service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
+import java.util.List;
+import java.util.Optional;
+
+import com.ufcg.psoft.repository.LoteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ufcg.psoft.model.Lote;
+import com.ufcg.psoft.model.Produto;
 
-@Service("loteService")
+@Service
 public class LoteServiceImpl implements LoteService {
 
-	private static final AtomicLong counter = new AtomicLong();
-
-	private static List<Lote> lotes;
-
-	static {
-		lotes = new ArrayList<>();
-	}
+	@Autowired
+	LoteRepository loteRepository;
 
 	@Override
 	public Lote saveLote(Lote lote) {
-		lote.setId(counter.incrementAndGet());
-		lotes.add(lote);
-
+		this.loteRepository.save(lote);
 		return lote;
 	}
 
 	@Override
 	public Lote findById(long id) {
-		for (Lote lote : lotes) {
-			if (lote.getId() == id) {
-				return lote;
-			}
-		}
-		return null;
+		return this.loteRepository.findById(id).get();
 	}
 
 	@Override
-	public void updateProduto(Lote lote) {
-		int index = lotes.indexOf(lote);
-		lotes.set(index, lote);
-
+	public void updateLote(Lote lote) {
+		this.loteRepository.save(lote);
 	}
 
 	@Override
 	public void deleteLoteById(long id) {
-		for (Iterator<Lote> iterator = lotes.iterator(); iterator.hasNext();) {
-			Lote lote = iterator.next();
-			if (lote.getId() == id) {
-				iterator.remove();
-			}
-		}
+		this.loteRepository.deleteById(id);
 	}
 
 	@Override
 	public List<Lote> findAllLotes() {
-		return lotes;
+		return this.loteRepository.findAll();
 	}
 
 	@Override
 	public int size() {
-		return lotes.size();
+		return this.loteRepository.findAll().size();
 	}
 
 	@Override
-	public Iterator<Lote> getIterator() {
-		return null;
+	public void setNumeroDeItens(Lote lote, int numeroDeItens) {
+		lote.setNumeroDeItens(numeroDeItens);
+		this.loteRepository.save(lote);
 	}
+
+	@Override
+	public Optional<Lote> findByProduto(Produto produto) {
+		return this.loteRepository.findByProduto(produto);
+	}
+
 }

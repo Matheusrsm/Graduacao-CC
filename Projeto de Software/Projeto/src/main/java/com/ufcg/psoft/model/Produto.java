@@ -1,11 +1,16 @@
 package com.ufcg.psoft.model;
 
 import java.math.BigDecimal;
+import javax.persistence.*;
 
-import exceptions.ObjetoInvalidoException;
-
+@Entity
+@Table(name = Produto.TB_PRODUTO)
 public class Produto {
 
+	public static final String TB_PRODUTO = "TB_PRODUTO";
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
 	private String nome;
@@ -16,7 +21,10 @@ public class Produto {
 
 	private String fabricante;
 
-	private String categoria;
+	private boolean produtoVencido;
+
+	@ManyToOne(cascade=CascadeType.MERGE)
+	private Categoria categoria;
 
 	public int situacao; // usa variaveis estaticas abaixo
 	/* situacoes do produto */
@@ -24,26 +32,35 @@ public class Produto {
 	public static final int INDISPONIVEL = 2;
 
 	public Produto() {
-		this.id = 0;
 		this.preco = new BigDecimal(0);
 	}
 
-	public Produto(long id, String nome, String codigoBarra, String fabricante,
-			String nomeCategoria) {
-		this.id = id;
+	public Produto(String nome, String codigoBarra, String fabricante,
+				   Categoria categoria) {
 		this.nome = nome;
 		this.preco = new BigDecimal(0);
 		this.codigoBarra = codigoBarra;
 		this.fabricante = fabricante;
-		this.categoria = nomeCategoria;
+		this.categoria = categoria;
 		this.situacao = Produto.INDISPONIVEL;
 	}
+
+	public Produto(String nome, String codigoBarra, String fabricante,
+				   Categoria categoria, BigDecimal preco) {
+		this.nome = nome;
+		this.preco = preco;
+		this.codigoBarra = codigoBarra;
+		this.fabricante = fabricante;
+		this.categoria = categoria;
+		this.situacao = Produto.INDISPONIVEL;
+	}
+
 
 	public String getNome() {
 		return nome;
 	}
 
-	public void mudaNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
@@ -59,7 +76,7 @@ public class Produto {
 		return id;
 	}
 
-	public void mudaId(long codigo) {
+	public void setId(long codigo) {
 		this.id = codigo;
 	}
 
@@ -67,7 +84,7 @@ public class Produto {
 		return fabricante;
 	}
 
-	public void mudaFabricante(String fabricante) {
+	public void setFabricante(String fabricante) {
 		this.fabricante = fabricante;
 	}
 
@@ -79,30 +96,50 @@ public class Produto {
 		this.codigoBarra = codigoBarra;
 	}
 
-	public String getCategoria() {
+	public Categoria getCategoria() {
 		return this.categoria;
 	}
 
-	public void mudaCategoria(String categoria) {
+	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-		
-	public void mudaSituacao(int situacao) throws ObjetoInvalidoException {
-		switch (situacao) {
-		case 1:
-			this.situacao = Produto.DISPONIVEL;
-			break;
-		case 2:
-			this.situacao = Produto.INDISPONIVEL;
-			break;
 
-		default:
-			throw new ObjetoInvalidoException("Situacao Invalida");
+	public void tornaDisponivel() {
+		this.situacao = DISPONIVEL;
+	}
+
+	public void tornaIndisponivel() {
+		this.situacao = INDISPONIVEL;
+	}
+
+	public int getSituacao() {
+		return this.situacao;
+	}
+
+	public boolean isIndisponivel() {
+		return situacao == INDISPONIVEL;
+	}
+
+	public boolean isProdutoVencido() {
+		return produtoVencido;
+	}
+
+	public void setProdutoVencido(boolean vencido) {
+		this.produtoVencido = vencido;
+		if (produtoVencido) {
+			this.situacao = Produto.INDISPONIVEL;
 		}
 	}
 
-	public int getSituacao() throws ObjetoInvalidoException {
-		return this.situacao;
+	@Override
+	public String toString(){
+		return "Produto{" +
+				"id=" + id +
+				", nome=" + nome +
+				", preco=" + preco +
+				", codigoBarra=" + codigoBarra +
+				", fabricante='" + fabricante + '\'' +
+				'}';
 	}
 
 	@Override

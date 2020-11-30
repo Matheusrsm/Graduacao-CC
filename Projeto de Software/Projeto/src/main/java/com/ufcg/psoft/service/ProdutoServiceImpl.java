@@ -1,100 +1,65 @@
 package com.ufcg.psoft.service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.math.BigDecimal;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
-
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.ufcg.psoft.model.Lote;
 import com.ufcg.psoft.model.Produto;
+import com.ufcg.psoft.repository.ProdutoRepository;
 
-@Service("produtoService")
+@Service
 public class ProdutoServiceImpl implements ProdutoService {
 
-	private static final AtomicLong counter = new AtomicLong();
+	@Autowired
+	ProdutoRepository produtoRepository;
 
-	private static List<Produto> produtos;
-	
-	private static List<Lote> lotes;
-
-	static {
-		produtos = populateDummyProdutos();
-		lotes = new ArrayList<>();
-	}
-
-	private static List<Produto> populateDummyProdutos() {
-		List<Produto> produtos = new ArrayList<Produto>();
-		
-		produtos.add(new Produto(counter.incrementAndGet(), "Leite Integral", "87654321-B", "Parmalat", "Mercearia"));
-		produtos.add(new Produto(counter.incrementAndGet(), "Arroz Integral", "87654322-B", "Tio Joao", "Perecíveis"));
-		produtos.add(new Produto(counter.incrementAndGet(), "Sabao em Po", "87654323-B", "OMO", "Limpeza"));
-		produtos.add(new Produto(counter.incrementAndGet(), "Agua Sanitaria", "87654324-C", "Dragao", "limpesa"));
-		produtos.add(new Produto(counter.incrementAndGet(), "Creme Dental", "87654325-C", "Colgate", "HIGIENE"));
-
-		return produtos;
+	ProdutoServiceImpl() {
 	}
 
 	public List<Produto> findAllProdutos() {
-		return produtos;
+		return this.produtoRepository.findAll();
 	}
 
-	public void saveProduto(Produto produto) {
-		produto.mudaId(counter.incrementAndGet());
-		produtos.add(produto);
+	public Produto saveProduto(Produto produto) {
+		this.produtoRepository.save(produto);
+		return produto;
 	}
 
-	public void updateProduto(Produto produto) {
-		int index = produtos.indexOf(produto);
-		produtos.set(index, produto);
+	@Override
+	public Optional<Produto> findByCodigoDeBarras(String codigoBarra) {
+		return this.produtoRepository.findByCodigoBarra(codigoBarra);
+	}
+
+	public Produto updateProduto(Produto produto) {
+		this.produtoRepository.save(produto);
+		return produto;
 	}
 
 	public void deleteProdutoById(long id) {
-
-		for (Iterator<Produto> iterator = produtos.iterator(); iterator.hasNext();) {
-			Produto p = iterator.next();
-			if (p.getId() == id) {
-				iterator.remove();
-			}
-		}
+		this.produtoRepository.deleteById(id);
 	}
 
-	// este metodo nunca eh chamado, mas se precisar estah aqui
 	public int size() {
-		return produtos.size();
+		return this.produtoRepository.findAll().size();
 	}
 
-	public Iterator<Produto> getIterator() {
-		return produtos.iterator();
+	public void deleteAllProdutos() {
+		this.produtoRepository.deleteAll();
 	}
 
-	public void deleteAllUsers() {
-		produtos.clear();
+	public Optional<Produto> findById(long id) {
+		return this.produtoRepository.findById(id);
 	}
 
-	public Produto findById(long id) {
-		for (Produto produto : produtos) {
-			if (produto.getId() == id) {
-				return produto;
-			}
-		}
-		return null;
+	@Override
+	public BigDecimal getPreco(Produto produto) {
+		return produto.getPreco();
 	}
 
-	public boolean doesProdutoExist(Produto produto) {
-		for (Produto p : produtos) {
-			if (p.getCodigoBarra().equals(produto.getCodigoBarra())) {
-				return true;
-			}
-		}
-		return false;
+	@Override
+	public BigDecimal getDesconto(Produto produto) {
+		return produto.getCategoria().getDesconto();
 	}
-	
-	public Lote saveLote(Lote lote) {
-		lote.setId(counter.incrementAndGet());
-		lotes.add(lote);
 
-		return lote;
-	}
 }

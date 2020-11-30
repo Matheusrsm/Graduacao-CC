@@ -1,25 +1,31 @@
 package com.ufcg.psoft.service;
 
-import java.util.Iterator;
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
+import com.ufcg.psoft.model.DTO.ProdutoDTO;
 import com.ufcg.psoft.model.Produto;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface ProdutoService {
 
 	List<Produto> findAllProdutos();
 
-	void saveProduto(Produto produto);
+	Produto saveProduto(Produto produto);
 
-	Produto findById(long id);
+	Optional<Produto> findByCodigoDeBarras(String codigoBarra);
 
-	void updateProduto(Produto user);
+	Optional<Produto> findById(long id);
+
+	Produto updateProduto(Produto produto);
 
 	void deleteProdutoById(long id);
 
 	int size();
 
-	Iterator<Produto> getIterator();
+	BigDecimal getPreco(Produto produto);
 
-	boolean doesProdutoExist(Produto produto);
+	BigDecimal getDesconto(Produto produto);
 }

@@ -1,5 +1,6 @@
 package com.ufcg.psoft.model.DTO;
 
+
 public class LoteDTO {
 
     private int numeroDeItens;
