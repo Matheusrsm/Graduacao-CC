@@ -32,7 +32,7 @@
         "grunt-contrib-watch": "^1.0.0",
         "grunt-jscs": "^3.0.1",
         "jasmine-core": "^2.4.1",
-        "jasmine-reporters": "^2.2.0",
+        "jasmine-reporters": "^2.5.0",
         "load-grunt-tasks": "^3.5.0"
     },
     "engines": {
